@@ -2,6 +2,7 @@
 
 body {
 	overflow-x: hidden;
+	font-family: "Inter_18pt-Regular", sans-serif;
 	background: #ffffff;
 }
 .container {
@@ -19,5 +20,5 @@ input::-webkit-credentials-auto-fill {
 	appearance: none;
 }
 .wrapper {
-	display: flex;
+	flex: 1 0;
 }

@@ -14,7 +14,7 @@
   font-family: "CormorantGaramond-Medium";
   font-display: swap;
   src: url("../../fonts/CormorantGaramond-Medium.woff") format("woff"), url("../../fonts/CormorantGaramond-Medium.woff2") format("woff2");
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -22,7 +22,7 @@
   font-family: "CormorantGaramond-MediumItalic";
   font-display: swap;
   src: url("../../fonts/CormorantGaramond-MediumItalic.woff") format("woff"), url("../../fonts/CormorantGaramond-MediumItalic.woff2") format("woff2");
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -30,7 +30,7 @@
   font-family: "CormorantGaramond-SemiBold";
   font-display: swap;
   src: url("../../fonts/CormorantGaramond-SemiBold.woff") format("woff"), url("../../fonts/CormorantGaramond-SemiBold.woff2") format("woff2");
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
 }
 
@@ -46,7 +46,7 @@
   font-family: "Inter_18pt-Light";
   font-display: swap;
   src: url("../../fonts/Inter_18pt-Light.woff") format("woff"), url("../../fonts/Inter_18pt-Light.woff2") format("woff2");
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -54,7 +54,7 @@
   font-family: "Inter_18pt-Bold";
   font-display: swap;
   src: url("../../fonts/Inter_18pt-Bold.woff") format("woff"), url("../../fonts/Inter_18pt-Bold.woff2") format("woff2");
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -62,7 +62,7 @@
   font-family: "Inter_18pt-Medium";
   font-display: swap;
   src: url("../../fonts/Inter_18pt-Medium.woff") format("woff"), url("../../fonts/Inter_18pt-Medium.woff2") format("woff2");
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -78,7 +78,7 @@
   font-family: "Inter_18pt-SemiBold";
   font-display: swap;
   src: url("../../fonts/Inter_18pt-SemiBold.woff") format("woff"), url("../../fonts/Inter_18pt-SemiBold.woff2") format("woff2");
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
 }
 
