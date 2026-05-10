@@ -132,7 +132,7 @@ gulp.task('svgSprite', function () {
 })
 
 function fontsStyle(params) {
-
+	
 	let file_content = fs.readFileSync(source_folder + '/scss/default/_fonts.scss');
 	if (file_content == '') {
 		fs.writeFile(source_folder + '/scss/default/fonts.scss', '', cb);
@@ -302,13 +302,3 @@ exports.html = html;
 exports.build = build;
 exports.watch = watch;
 exports.default = watch;
-
-
-
-
-
-
-
-
-
-

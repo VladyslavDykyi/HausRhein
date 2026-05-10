@@ -8,11 +8,3 @@
 		font-style: #{$style};
 	}
 }
-@mixin use-font($family, $weight) {
-	font-family: $family;
-	font-weight: $weight;
-}
-@mixin use-size( $size, $line-height) {
-	font-size: $size;
-	line-height: $line-height;
-}

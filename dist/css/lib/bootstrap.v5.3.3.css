@@ -1,10 +1,10 @@
 @charset "UTF-8";
 
 /*!
- * Bootstrap  v5.3.3 (https://getbootstrap.com/)
- * Copyright 2011-2024 The Bootstrap Authors
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
+  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
+  * Copyright 2011-2024 The Bootstrap Authors
+  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+  */
 
 :root,
 [data-bs-theme=light] {
@@ -548,13 +548,13 @@ legend + * {
 }
 
 /* rtl:raw:
-[type="tel"],
-[type="url"],
-[type="email"],
-[type="number"] {
-  direction: ltr;
-}
-*/
+ [type="tel"],
+ [type="url"],
+ [type="email"],
+ [type="number"] {
+   direction: ltr;
+ }
+ */
 
 ::-webkit-search-decoration {
   -webkit-appearance: none;

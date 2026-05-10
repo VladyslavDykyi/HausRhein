@@ -52,34 +52,34 @@
 
 @-webkit-keyframes f-spinner-dash {
   0% {
-    stroke-dasharray: 1,150;
+    stroke-dasharray: 1, 150;
     stroke-dashoffset: 0;
   }
 
   50% {
-    stroke-dasharray: 90,150;
+    stroke-dasharray: 90, 150;
     stroke-dashoffset: -35;
   }
 
   100% {
-    stroke-dasharray: 90,150;
+    stroke-dasharray: 90, 150;
     stroke-dashoffset: -124;
   }
 }
 
 @keyframes f-spinner-dash {
   0% {
-    stroke-dasharray: 1,150;
+    stroke-dasharray: 1, 150;
     stroke-dashoffset: 0;
   }
 
   50% {
-    stroke-dasharray: 90,150;
+    stroke-dasharray: 90, 150;
     stroke-dashoffset: -35;
   }
 
   100% {
-    stroke-dasharray: 90,150;
+    stroke-dasharray: 90, 150;
     stroke-dashoffset: -124;
   }
 }
@@ -991,7 +991,7 @@ html.with-fancybox body.hide-scrollbar {
 
 .is-animating .fancybox__content,
 .is-dragging .fancybox__content {
-  will-change: transform,width,height;
+  will-change: transform, width, height;
 }
 
 .fancybox-image {
@@ -1499,7 +1499,7 @@ html.with-fancybox body.hide-scrollbar {
 }
 
 .is-modern .f-thumbs__slide__button {
-  --clip-path: inset( 0 calc( ((var(--f-thumb-width, 0) - var(--f-thumb-clip-width, 0))) * (1 - var(--progress, 0)) * 0.5 ) round var(--f-thumb-border-radius, 0) );
+  --clip-path: inset(0 calc(((var(--f-thumb-width, 0) - var(--f-thumb-clip-width, 0))) * (1 - var(--progress, 0)) * 0.5) round var(--f-thumb-border-radius, 0));
   -webkit-clip-path: var(--clip-path);
           clip-path: var(--clip-path);
 }
@@ -1648,7 +1648,7 @@ html.with-fancybox body.hide-scrollbar {
           justify-content: space-between;
   margin: 0;
   padding: 0;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI Adjusted","Segoe UI","Liberation Sans",sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI Adjusted", "Segoe UI", "Liberation Sans", sans-serif;
   color: var(--fancybox-color, currentColor);
   opacity: var(--fancybox-opacity, 1);
   text-shadow: var(--fancybox-toolbar-text-shadow, 1px 1px 1px rgba(0, 0, 0, 0.5));
