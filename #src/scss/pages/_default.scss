@@ -1,5 +1,8 @@
 //@import "../default/_fonts.scss";
 
+html {
+	scrollbar-gutter: stable;
+}
 body {
 	overflow-x: hidden;
 	font-family: "Inter_18pt-Regular", sans-serif;
