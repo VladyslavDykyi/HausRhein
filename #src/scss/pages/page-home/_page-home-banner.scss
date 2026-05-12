@@ -1,0 +1,38 @@
+.banner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	grid-gap: 20px;
+	width: 100%;
+	max-width: 714px;
+	margin: 0 auto;
+	padding: 0 20px;
+	@media screen and (max-width: 768px) {
+		padding: 0 12px;
+		grid-gap: 12px;
+	}
+	& p {
+		font-family: 'Inter_18pt-Medium', sans-serif;
+		font-weight: 500;
+		font-size: 11px;
+		letter-spacing: 0.12em;
+		color: #0f0f0f;
+		margin-bottom: 0;
+		@media screen and (max-width: 768px) {
+			letter-spacing: 0;
+		}
+		&:nth-child(2),
+		&:nth-child(3) {
+			@media screen and (max-width: 768px) {
+				display: none;
+			}
+		}
+	}
+	&-wrapper {
+		background: #c9a96e;
+		padding: 17px 0;
+		@media screen and (max-width: 768px) {
+			padding: 12px 0;
+		}
+	}
+}

@@ -9,21 +9,14 @@
 	<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="./css/default/style.min.css">
 	<link rel="stylesheet" href="./css/lib/bootstrap.v5.3.3.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
 	<link rel="stylesheet" href="./css/pages/page-home.min.css">
 </head>
 <body class="d-flex flex-column min-vh-100">
 @@include('./html/_header.html')
+@@include('./html/page-home/_page-home-banner.html')
 <main class="wrapper">
-	<div class="dropdown">
-		<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-			Dropdown button
-		</button>
-		<ul class="dropdown-menu">
-			<li><a class="dropdown-item" href="#">Action</a></li>
-			<li><a class="dropdown-item" href="#">Another action</a></li>
-			<li><a class="dropdown-item" href="#">Something else here</a></li>
-		</ul>
-	</div>
+	@@include('./html/page-home/_page-home-hero.html')
 </main>
 @@include('./html/_footer.html')
 <!-- початок цей блок ще в розробці _modal	-->
@@ -31,5 +24,8 @@
 <!-- кінець цей блок ще в розробці _modal	-->
 <script src="./js/lib/popper.v2.11.8.min.js"></script>
 <script src="./js/lib/bootstrap.v5.3.3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<script src="./js/pages/page-home.min.js" type="module"></script>
 </body>
 </html>
