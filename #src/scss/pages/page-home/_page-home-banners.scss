@@ -1,0 +1,31 @@
+.banners {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 768px;
+	margin: 0 auto;
+	@media screen and (max-width: 768px) {
+		max-width: 498px;
+		justify-content: space-between;
+		grid-gap: 32px;
+	}
+	@media screen and (max-width: 480px) {
+		flex-direction: column;
+	}
+	&-wrapper {
+		background: #fff;
+		padding: 20px 0;
+	}
+	&-text {
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 165%;
+		color: #5f5f5f;
+		margin-bottom: 0;
+		@media screen and (max-width: 768px) {
+			width: 100%;
+			text-align: center;
+		}
+	}
+}

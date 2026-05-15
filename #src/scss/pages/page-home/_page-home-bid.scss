@@ -1,0 +1,87 @@
+.bid {
+	&-wrapper {
+		background: #fff;
+		padding: 100px 0;
+		@media screen and (max-width: 768px) {
+			padding: 48px 0;
+		}
+		@media screen and (max-width: 580px) {
+			padding: 40px 0;
+		}
+	}
+	&__text {
+		font-family: "Inter_18pt-Medium", sans-serif;
+		font-weight: 500;
+		font-size: 10px;
+		letter-spacing: 0.3em;
+		color: #8e8881;
+		margin-bottom: 8px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	&__title {
+		font-family: 'CormorantGaramond-Regular', serif;
+		font-weight: 400;
+		font-size: 44px;
+		color: #0f0f0f;
+		margin-bottom: 56px;
+		text-align: center;
+		@media screen and (max-width: 580px) {
+			font-size: 32px;
+		}
+	}
+	&__list {
+		padding-left: 0;
+		display: flex;
+		justify-content: space-between;
+		list-style: none;
+		grid-gap: 24px;
+		max-width: 1200px;
+		margin: 0 auto;
+		@media screen and (max-width: 992px) {
+			flex-wrap: wrap;
+			grid-gap: 16px;
+		}
+	}
+	&__item {
+		padding: 44px 36px;
+		max-width: 282px;
+		width: 100%;
+		background: #f8f6f1;
+		@media screen and (max-width: 992px) {
+			max-width: calc(50% - 8px);
+		}
+		@media screen and (max-width: 580px) {
+			max-width: 100%;
+		}
+		& span {
+			font-family: 'CormorantGaramond-Regular', serif;
+			font-weight: 400;
+			font-size: 44px;
+			line-height: normal;
+			color: #c9a96e;
+			margin-bottom: 16px;
+			display: block;
+			@media screen and (max-width: 580px) {
+				font-size: 32px;
+			}
+		}
+		& h3 {
+			font-family: 'CormorantGaramond-Regular', serif;
+			font-weight: 400;
+			font-size: 24px;
+			color: #0f0f0f;
+			margin-bottom: 16px;
+		}
+		& p {
+			font-weight: 400;
+			font-size: 13px;
+			line-height: 165%;
+			color: #8e8881;
+			margin-bottom: 0;
+			@media screen and (max-width: 580px) {
+				font-size: 16px;
+			}
+		}
+	}
+}
