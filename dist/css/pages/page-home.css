@@ -1309,6 +1309,258 @@ input::-webkit-credentials-auto-fill {
   margin-bottom: 0;
 }
 
+.subscription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.subscription-wrapper {
+  background: #f8f6f1;
+  padding: 80px 0;
+}
+
+.subscription__info {
+  max-width: 500px;
+}
+
+.subscription__label {
+  font-family: "Inter_18pt-Medium", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  letter-spacing: 0.3em;
+  color: #8e8881;
+  margin-bottom: 16px;
+}
+
+.subscription__title {
+  font-family: 'CormorantGaramond-Regular', serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 108%;
+  color: #0f0f0f;
+  margin-bottom: 16px;
+}
+
+.subscription__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 168%;
+  color: #8e8881;
+  margin-bottom: 16px;
+}
+
+.subscription__list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  grid-gap: 10px;
+}
+
+.subscription__item {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: normal;
+  color: #1c1c1c;
+  padding: 5px 12px 5px 22px;
+  border: 1px solid #e0ddd8;
+  position: relative;
+}
+
+.subscription__item:after {
+  content: "";
+  background: #c9a96e;
+  width: 4px;
+  height: 4px;
+  display: block;
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  border-radius: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.subscription__form-wrapper {
+  max-width: 520px;
+  background: #fff;
+  padding: 48px;
+}
+
+.subscription__form-title {
+  font-family: 'CormorantGaramond-Regular', serif;
+  font-weight: 400;
+  font-size: 28px;
+  color: #0f0f0f;
+  margin-bottom: 20px;
+}
+
+.subscription__form-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-gap: 12px;
+  margin-bottom: 20px;
+}
+
+.subscription__form-item > div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  position: relative;
+}
+
+.subscription__form-item > div.error input {
+  border-color: #d10e1f !important;
+}
+
+.subscription__form-item > div.error .invalid-feedback {
+  display: block;
+  color: #d10e1f;
+}
+
+.subscription__form-item > div input.form-control {
+  min-height: auto;
+  height: auto;
+  border: 1px solid #e0ddd8;
+  border-radius: 4px;
+  padding: 11px 14px;
+  background: #f8f6f1;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: normal;
+  color: #0f0f0f;
+}
+
+.subscription__form-item > div input.form-control::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: normal;
+  color: #b8b2ad;
+}
+
+.subscription__form-item > div input.form-control::-moz-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: normal;
+  color: #b8b2ad;
+}
+
+.subscription__form-item > div input.form-control:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: normal;
+  color: #b8b2ad;
+}
+
+.subscription__form-item > div input.form-control::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: normal;
+  color: #b8b2ad;
+}
+
+.subscription__form-item > div input.form-control::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: normal;
+  color: #b8b2ad;
+}
+
+.subscription__form-item > div input.form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #c9a96e;
+}
+
+.subscription__form-item > div input.form-control:focus ~ label:after {
+  background-color: transparent;
+}
+
+.subscription__form-item > div input.form-control ~ label:after {
+  background-color: transparent;
+}
+
+.subscription__form-item > div label {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  color: #b8b2ad;
+  line-height: normal;
+}
+
+.subscription__form-item > div .invalid-feedback {
+  position: absolute;
+  left: 0;
+  bottom: -16px;
+  font-weight: 400;
+  font-size: 11px;
+  color: #d10e1f;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.subscription__form-item .btn-primary {
+  white-space: nowrap;
+  border-radius: 4px;
+  padding: 16px 24px;
+  width: 100%;
+  background: #c9a96e;
+  font-family: "Inter_18pt-SemiBold", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  line-height: normal;
+  color: #0f0f0f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+}
+
+.subscription__form-item .btn-primary:hover {
+  background: #b8965c;
+}
+
+.subscription__form-item .btn-primary:active {
+  background: #b8965c;
+  color: #0f0f0f;
+}
+
+.subscription__form-item .btn-primary:disabled {
+  background: #dec79e;
+  opacity: 0.6;
+}
+
+.subscription__form-text {
+  font-weight: 400;
+  font-size: 11px;
+  text-align: center;
+  color: #ada8a3;
+  margin-bottom: 0;
+}
+
 .bid-wrapper {
   background: #fff;
   padding: 100px 0;
@@ -1527,6 +1779,25 @@ input::-webkit-credentials-auto-fill {
     font-size: 38px;
   }
 
+  .subscription {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+
+  .subscription__info {
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .subscription__form-wrapper {
+    max-width: 100%;
+  }
+
   .bid__list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1672,6 +1943,32 @@ input::-webkit-credentials-auto-fill {
 }
 
 @media screen and (max-width: 580px) {
+  .subscription-wrapper {
+    padding: 40px 0;
+  }
+
+  .subscription__title {
+    font-size: 34px;
+  }
+
+  .subscription__form-wrapper {
+    padding: 48px 20px;
+  }
+
+  .subscription__form-title {
+    text-align: center;
+  }
+
+  .subscription__form-item {
+    grid-gap: 20px;
+  }
+
+  .subscription__form-item > div {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+
   .bid-wrapper {
     padding: 40px 0;
   }
