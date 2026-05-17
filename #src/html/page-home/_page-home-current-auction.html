@@ -11,18 +11,43 @@
 						</li>
 					</ul>
 				</div>
-				<a class="current-auction__read-more" href="#">
-					<span>
-						View Full Catalogue
-					</span>
-					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M8.69271 12.6666L7.89063 11.8749L11.1927 8.57283H2.64062V7.427H11.1927L7.89063 4.13534L8.69271 3.33325L13.3594 7.99992L8.69271 12.6666Z" fill="#1C1C1C" />
-					</svg>
-				</a>
+				<div class="current-auction-action">
+					<div class="current-auction__timer-wrapper">
+						<p>
+							AUCTION Starts IN
+						</p>
+						<div class="timer">
+							<span class="count">
+								<span class="count-number count-days">00</span>
+								<span class="measure measure-days">DAYS</span>
+							</span>
+							<span class="count">
+								<span class="count-number count-hours">00</span>
+								<span class="measure measure-hours">HRS</span>
+							</span>
+							<span class="count">
+								<span class="count-number count-minutes">00</span>
+								<span class="measure measure-minutes">MIN</span>
+							</span>
+							<span class="count">
+								<span class="count-number count-seconds">00</span>
+								<span class="measure measure-seconds">SEC</span>
+							</span>
+						</div>
+					</div>
+					<a class="current-auction__read-more" href="#">
+						<span>
+							View Full Catalogue
+						</span>
+						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M8.69271 12.6666L7.89063 11.875L11.1927 8.5729H2.64062V7.42706H11.1927L7.89063 4.1354L8.69271 3.33331L13.3594 7.99998L8.69271 12.6666Z" fill="#C9A96E" />
+						</svg>
+					</a>
+				</div>
 			</div>
 			<ul class="current-auction__list">
-				<li class="current-auction__item">
-					<div id="carouselCurrent-auction" class="carousel slide">
+				<li class="current-auction__item current-auction__card">
+					<div id="carouselCurrent-auction1" class="current-auction__card-slider carousel slide">
 						<div class="carousel-inner">
 							<div class="carousel-item active">
 								<a href="#">
@@ -40,57 +65,278 @@
 								</a>
 							</div>
 						</div>
-						<button class="carousel-control-prev" type="button" data-bs-target="#carouselCurrent-auction" data-bs-slide="prev">
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselCurrent-auction1" data-bs-slide="prev">
 							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 							<span class="visually-hidden">Previous</span>
 						</button>
-						<button class="carousel-control-next" type="button" data-bs-target="#carouselCurrent-auction" data-bs-slide="next">
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselCurrent-auction1" data-bs-slide="next">
 							<span class="carousel-control-next-icon" aria-hidden="true"></span>
 							<span class="visually-hidden">Next</span>
 						</button>
 					</div>
-					<div>
-						<p>PABLO PICASSO</p>
-						<a href="#">
-							Femme assise au chapeau
-						</a>
-						<p>
-							Oil on canvas, 1941
-						</p>
-						<p>
-							Estimate: CHF 3,200,000 – 4,500,000
-						</p>
-						<p>
-							CURRENT BID
-						</p>
-						<div>
-							<p></p>
-							<button>
-								<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<mask id="mask0_1048_5604" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
-										<path d="M12 0H0V12H12V0Z" fill="white" />
-									</mask>
-									<g mask="url(#mask0_1048_5604)">
-										<path d="M6.30994 10.4048C6.13994 10.4648 5.85994 10.4648 5.68994 10.4048C4.23994 9.9098 0.999939 7.8448 0.999939 4.3448C0.999939 2.7998 2.24494 1.5498 3.77994 1.5498C4.68994 1.5498 5.49494 1.9898 5.99994 2.6698C6.50494 1.9898 7.31494 1.5498 8.21994 1.5498C9.75494 1.5498 10.9999 2.7998 10.9999 4.3448C10.9999 7.8448 7.75994 9.9098 6.30994 10.4048Z" stroke="#706B66" stroke-linecap="round" stroke-linejoin="round" />
-									</g>
-								</svg>
-								Save
+					<div class="current-auction__card-info">
+						<div class="current-auction__card-info-wrapper">
+							<p class="current-auction__card-label">PABLO PICASSO</p>
+							<a class="current-auction__card-title" href="#">
+								Femme assise au chapeau
+							</a>
+							<p class="current-auction__card-type">
+								Oil on canvas, 1941
+							</p>
+							<p class="current-auction__card-estimate">
+								Estimate: CHF 3,200,000 – 4,500,000
+							</p>
+							<div class="current-auction__card-price-wrapper">
+								<div>
+									<p class="current-auction__card-auction">
+										CURRENT BID
+									</p>
+									<p class="current-auction__card-price">
+										CHF 3,840,000
+									</p>
+								</div>
+								<button class="current-auction__card-like">
+									<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<mask id="mask0_1048_5604" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+											<path d="M12 0H0V12H12V0Z" fill="white" />
+										</mask>
+										<g mask="url(#mask0_1048_5604)">
+											<path d="M6.30994 10.4048C6.13994 10.4648 5.85994 10.4648 5.68994 10.4048C4.23994 9.9098 0.999939 7.8448 0.999939 4.3448C0.999939 2.7998 2.24494 1.5498 3.77994 1.5498C4.68994 1.5498 5.49494 1.9898 5.99994 2.6698C6.50494 1.9898 7.31494 1.5498 8.21994 1.5498C9.75494 1.5498 10.9999 2.7998 10.9999 4.3448C10.9999 7.8448 7.75994 9.9098 6.30994 10.4048Z" stroke="#706B66" stroke-linecap="round" stroke-linejoin="round" />
+										</g>
+									</svg>
+									<span>
+										Save
+									</span>
+								</button>
+							</div>
+						</div>
+						<div class="current-auction__card-buy">
+							<button class="current-auction__card-btn" href="#">
+								Bid Now
 							</button>
 						</div>
-						<div>
-							<a href="#">
-								Bid Now
+					</div>
+				</li>
+				<li class="current-auction__item current-auction__card">
+					<div id="carouselCurrent-auction2" class="current-auction__card-slider carousel slide">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<a href="#">
+									<img src="./img/test1.png" class="d-block w-100" alt="...">
+								</a>
+							</div>
+							<div class="carousel-item">
+								<a href="#">
+									<img src="./img/test2.png" class="d-block w-100" alt="...">
+								</a>
+							</div>
+							<div class="carousel-item">
+								<a href="#">
+									<img src="./img/test1.png" class="d-block w-100" alt="...">
+								</a>
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselCurrent-auction2" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselCurrent-auction2" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+					<div class="current-auction__card-info">
+						<div class="current-auction__card-info-wrapper">
+							<p class="current-auction__card-label">PABLO PICASSO</p>
+							<a class="current-auction__card-title" href="#">
+								Femme assise au chapeau
 							</a>
+							<p class="current-auction__card-type">
+								Oil on canvas, 1941
+							</p>
+							<p class="current-auction__card-estimate">
+								Estimate: CHF 3,200,000 – 4,500,000
+							</p>
+							<div class="current-auction__card-price-wrapper">
+								<div>
+									<p class="current-auction__card-auction">
+										CURRENT BID
+									</p>
+									<p class="current-auction__card-price">
+										CHF 3,840,000
+									</p>
+								</div>
+								<button class="current-auction__card-like">
+									<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<mask id="mask0_1048_5604" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+											<path d="M12 0H0V12H12V0Z" fill="white" />
+										</mask>
+										<g mask="url(#mask0_1048_5604)">
+											<path d="M6.30994 10.4048C6.13994 10.4648 5.85994 10.4648 5.68994 10.4048C4.23994 9.9098 0.999939 7.8448 0.999939 4.3448C0.999939 2.7998 2.24494 1.5498 3.77994 1.5498C4.68994 1.5498 5.49494 1.9898 5.99994 2.6698C6.50494 1.9898 7.31494 1.5498 8.21994 1.5498C9.75494 1.5498 10.9999 2.7998 10.9999 4.3448C10.9999 7.8448 7.75994 9.9098 6.30994 10.4048Z" stroke="#706B66" stroke-linecap="round" stroke-linejoin="round" />
+										</g>
+									</svg>
+									<span>
+										Save
+									</span>
+								</button>
+							</div>
+						</div>
+						<div class="current-auction__card-buy">
+							<button class="current-auction__card-btn" href="#">
+								Bid Now
+							</button>
+						</div>
+					</div>
+				</li>
+				<li class="current-auction__item current-auction__card">
+					<div id="carouselCurrent-auction3" class="current-auction__card-slider carousel slide">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<a href="#">
+									<img src="./img/test1.png" class="d-block w-100" alt="...">
+								</a>
+							</div>
+							<div class="carousel-item">
+								<a href="#">
+									<img src="./img/test2.png" class="d-block w-100" alt="...">
+								</a>
+							</div>
+							<div class="carousel-item">
+								<a href="#">
+									<img src="./img/test1.png" class="d-block w-100" alt="...">
+								</a>
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselCurrent-auction3" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselCurrent-auction3" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+					<div class="current-auction__card-info">
+						<div class="current-auction__card-info-wrapper">
+							<p class="current-auction__card-label">PABLO PICASSO</p>
+							<a class="current-auction__card-title" href="#">
+								Femme assise au chapeau
+							</a>
+							<p class="current-auction__card-type">
+								Oil on canvas, 1941
+							</p>
+							<p class="current-auction__card-estimate">
+								Estimate: CHF 3,200,000 – 4,500,000
+							</p>
+							<div class="current-auction__card-price-wrapper">
+								<div>
+									<p class="current-auction__card-auction">
+										CURRENT BID
+									</p>
+									<p class="current-auction__card-price">
+										CHF 3,840,000
+									</p>
+								</div>
+								<button class="current-auction__card-like liked">
+									<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<mask id="mask0_1048_5604" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+											<path d="M12 0H0V12H12V0Z" fill="white" />
+										</mask>
+										<g mask="url(#mask0_1048_5604)">
+											<path d="M6.30994 10.4048C6.13994 10.4648 5.85994 10.4648 5.68994 10.4048C4.23994 9.9098 0.999939 7.8448 0.999939 4.3448C0.999939 2.7998 2.24494 1.5498 3.77994 1.5498C4.68994 1.5498 5.49494 1.9898 5.99994 2.6698C6.50494 1.9898 7.31494 1.5498 8.21994 1.5498C9.75494 1.5498 10.9999 2.7998 10.9999 4.3448C10.9999 7.8448 7.75994 9.9098 6.30994 10.4048Z" stroke="#706B66" stroke-linecap="round" stroke-linejoin="round" />
+										</g>
+									</svg>
+									<span>
+										Save
+									</span>
+								</button>
+							</div>
+						</div>
+						<div class="current-auction__card-buy">
+							<button class="current-auction__card-btn" href="#">
+								Bid Now
+							</button>
+						</div>
+					</div>
+				</li>
+				<li class="current-auction__item current-auction__card">
+					<div id="carouselCurrent-auction4" class="current-auction__card-slider carousel slide">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<a href="#">
+									<img src="./img/test1.png" class="d-block w-100" alt="...">
+								</a>
+							</div>
+							<div class="carousel-item">
+								<a href="#">
+									<img src="./img/test2.png" class="d-block w-100" alt="...">
+								</a>
+							</div>
+							<div class="carousel-item">
+								<a href="#">
+									<img src="./img/test1.png" class="d-block w-100" alt="...">
+								</a>
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselCurrent-auction4" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselCurrent-auction4" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+					<div class="current-auction__card-info">
+						<div class="current-auction__card-info-wrapper">
+							<p class="current-auction__card-label">PABLO PICASSO</p>
+							<a class="current-auction__card-title" href="#">
+								Femme assise au chapeau
+							</a>
+							<p class="current-auction__card-type">
+								Oil on canvas, 1941
+							</p>
+							<p class="current-auction__card-estimate">
+								Estimate: CHF 3,200,000 – 4,500,000
+							</p>
+							<div class="current-auction__card-price-wrapper">
+								<div>
+									<p class="current-auction__card-auction">
+										CURRENT BID
+									</p>
+									<p class="current-auction__card-price">
+										CHF 3,840,000
+									</p>
+								</div>
+								<button class="current-auction__card-like">
+									<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<mask id="mask0_1048_5604" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+											<path d="M12 0H0V12H12V0Z" fill="white" />
+										</mask>
+										<g mask="url(#mask0_1048_5604)">
+											<path d="M6.30994 10.4048C6.13994 10.4648 5.85994 10.4648 5.68994 10.4048C4.23994 9.9098 0.999939 7.8448 0.999939 4.3448C0.999939 2.7998 2.24494 1.5498 3.77994 1.5498C4.68994 1.5498 5.49494 1.9898 5.99994 2.6698C6.50494 1.9898 7.31494 1.5498 8.21994 1.5498C9.75494 1.5498 10.9999 2.7998 10.9999 4.3448C10.9999 7.8448 7.75994 9.9098 6.30994 10.4048Z" stroke="#706B66" stroke-linecap="round" stroke-linejoin="round" />
+										</g>
+									</svg>
+									<span>
+										Save
+									</span>
+								</button>
+							</div>
+						</div>
+						<div class="current-auction__card-buy">
+							<button class="current-auction__card-btn" href="#">
+								Bid Now
+							</button>
 						</div>
 					</div>
 				</li>
 			</ul>
 			<a class="current-auction__read-more" href="#">
-					<span>
-						View Full Catalogue
-					</span>
+				<span>
+					View Full Catalogue
+				</span>
 				<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M8.69271 12.6666L7.89063 11.8749L11.1927 8.57283H2.64062V7.427H11.1927L7.89063 4.13534L8.69271 3.33325L13.3594 7.99992L8.69271 12.6666Z" fill="#1C1C1C" />
+					<path d="M8.69271 12.6668L7.89063 11.8752L11.1927 8.57308H2.64062V7.42725H11.1927L7.89063 4.13558L8.69271 3.3335L13.3594 8.00016L8.69271 12.6668Z" fill="#C9A96E" />
 				</svg>
 			</a>
 		</div>
