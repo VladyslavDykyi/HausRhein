@@ -82,4 +82,12 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "EBGaramond-Medium";
+  font-display: swap;
+  src: url("../../fonts/EBGaramond-Medium.woff") format("woff"), url("../../fonts/EBGaramond-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
 /*--- дефолтные стили по сайту ---*/

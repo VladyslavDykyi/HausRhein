@@ -10,10 +10,11 @@
 		}
 	}
 	&__label {
-		font-family: "Inter_18pt-Medium", sans-serif;
-		font-weight: 500;
-		font-size: 10px;
-		letter-spacing: 0.3em;
+		font-family: "Inter_18pt-SemiBold", sans-serif;
+		font-weight: 600;
+		font-size: 14px;
+		letter-spacing: 0.25em;
+		line-height: normal;
 		color: #8e8881;
 		margin-bottom: 8px;
 		text-align: center;
@@ -22,10 +23,13 @@
 	&__title {
 		font-family: 'CormorantGaramond-Regular', serif;
 		font-weight: 400;
-		font-size: 44px;
+		font-size: 48px;
 		color: #0f0f0f;
 		margin-bottom: 56px;
 		text-align: center;
+		@media screen and (max-width: 992px) {
+			font-size: 40px;
+		}
 		@media screen and (max-width: 580px) {
 			font-size: 32px;
 		}
@@ -44,7 +48,7 @@
 		}
 	}
 	&__item {
-		padding: 44px 36px;
+		padding: 30px 24px;
 		max-width: 282px;
 		width: 100%;
 		background: #f8f6f1;
@@ -58,7 +62,7 @@
 			font-family: 'CormorantGaramond-Regular', serif;
 			font-weight: 400;
 			font-size: 44px;
-			line-height: normal;
+			line-height: 30px;
 			color: #c9a96e;
 			margin-bottom: 16px;
 			display: block;
@@ -69,14 +73,14 @@
 		& h3 {
 			font-family: 'CormorantGaramond-Regular', serif;
 			font-weight: 400;
-			font-size: 24px;
+			font-size: 26px;
 			color: #0f0f0f;
 			margin-bottom: 16px;
 		}
 		& p {
 			font-weight: 400;
-			font-size: 13px;
-			line-height: 165%;
+			font-size: 14px;
+			line-height: 145%;
 			color: #8e8881;
 			margin-bottom: 0;
 			@media screen and (max-width: 580px) {

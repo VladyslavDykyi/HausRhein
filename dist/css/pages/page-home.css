@@ -77,7 +77,7 @@ input::-webkit-credentials-auto-fill {
 
 .header__nav .dropdown.link .btn {
   font-weight: 400;
-  font-size: 13px;
+  font-size: 16px;
   letter-spacing: 0.05em;
   color: #b8b2ab;
   text-decoration: none;
@@ -169,13 +169,13 @@ input::-webkit-credentials-auto-fill {
 .header__nav .dropdown.link .dropdown-menu li a span:first-child {
   font-family: 'Inter_18pt-Medium', sans-serif;
   font-weight: 500;
-  font-size: 13px;
+  font-size: 16px;
   color: #f8f6f1;
 }
 
 .header__nav .dropdown.link .dropdown-menu li a span:last-child {
   font-weight: 400;
-  font-size: 11px;
+  font-size: 14px;
   color: #807870;
 }
 
@@ -186,7 +186,7 @@ input::-webkit-credentials-auto-fill {
 
 .header__nav-link {
   font-weight: 400;
-  font-size: 13px;
+  font-size: 16px;
   letter-spacing: 0.05em;
   color: #b8b2ab;
   text-decoration: none;
@@ -445,16 +445,16 @@ input::-webkit-credentials-auto-fill {
 
 .header__btn > span {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -4px;
+  right: -4px;
   font-family: "Inter_18pt-SemiBold", sans-serif;
   font-weight: 600;
-  font-size: 8px;
+  font-size: 12px;
   color: #0f0f0f;
   background: #c9a96e;
   border-radius: 7px;
-  width: 14px;
-  height: 14px;
+  min-width: 16px;
+  height: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -489,7 +489,7 @@ input::-webkit-credentials-auto-fill {
 .dropdown.lang button span {
   font-weight: 600;
   font-family: "Inter_18pt-SemiBold", sans-serif;
-  font-size: 11px;
+  font-size: 14px;
   color: #f8f6f1;
 }
 
@@ -515,7 +515,7 @@ input::-webkit-credentials-auto-fill {
 .dropdown.lang .dropdown-menu li:first-child {
   font-family: "Inter_18pt-SemiBold", sans-serif;
   font-weight: 600;
-  font-size: 9px;
+  font-size: 16px;
   letter-spacing: 0.05em;
   color: #665e54;
   padding: 14px 16px 8px;
@@ -554,19 +554,19 @@ input::-webkit-credentials-auto-fill {
 .dropdown.lang .dropdown-menu li a span:first-child {
   font-family: "Inter_18pt-SemiBold", sans-serif;
   font-weight: 600;
-  font-size: 10px;
+  font-size: 14px;
   color: #b2ada6;
   background: #2e2b26;
   border-radius: 3px;
   padding: 3px 8px;
-  width: 30px;
+  width: 36px;
   display: block;
   text-align: center;
 }
 
 .dropdown.lang .dropdown-menu li a span:last-child {
   font-weight: 400;
-  font-size: 13px;
+  font-size: 16px;
   color: #8c857d;
 }
 
@@ -607,7 +607,7 @@ input::-webkit-credentials-auto-fill {
 
 .btn-register-log .btn-dark {
   font-weight: 400;
-  font-size: 13px;
+  font-size: 16px;
   color: #b8b2ab;
   padding-left: 0;
   padding-right: 0;
@@ -625,7 +625,7 @@ input::-webkit-credentials-auto-fill {
   background: #c9a96e;
   font-family: "Inter_18pt-Medium", sans-serif;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 16px;
   letter-spacing: 0.05em;
   color: #0f0f0f;
   display: -webkit-box;
@@ -779,7 +779,7 @@ input::-webkit-credentials-auto-fill {
 .mobil-menu .offcanvas-body-item > ul a {
   font-family: 'Inter_18pt-Light', sans-serif;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
   color: #d9d1c7;
   text-decoration: none;
   white-space: nowrap;
@@ -800,7 +800,7 @@ input::-webkit-credentials-auto-fill {
 
 .mobil-menu .offcanvas-body-item > div > a {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   color: #fff;
   text-decoration: none;
   white-space: nowrap;
@@ -866,7 +866,7 @@ input::-webkit-credentials-auto-fill {
 .banner p {
   font-family: 'Inter_18pt-Medium', sans-serif;
   font-weight: 500;
-  font-size: 11px;
+  font-size: 14px;
   letter-spacing: 0.12em;
   color: #0f0f0f;
   margin-bottom: 0;
@@ -896,7 +896,7 @@ input::-webkit-credentials-auto-fill {
 }
 
 .hero__info {
-  max-width: 660px;
+  max-width: 680px;
 }
 
 .hero__announcement {
@@ -909,6 +909,7 @@ input::-webkit-credentials-auto-fill {
   padding: 8px 16px;
   display: inline-block;
   margin-bottom: 0;
+  text-transform: uppercase;
 }
 
 .hero__title {
@@ -926,6 +927,7 @@ input::-webkit-credentials-auto-fill {
   line-height: 165%;
   color: #b8b2ab;
   padding-right: 40px;
+  margin-bottom: 0;
 }
 
 .hero__active {
@@ -951,17 +953,20 @@ input::-webkit-credentials-auto-fill {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  grid-gap: 24px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  grid-gap: 14px;
 }
 
 .hero__active-links .btn-primary {
   background: #c9a96e;
   border-radius: 3px;
-  padding: 15px 36px;
+  padding: 12px 20px;
   line-height: normal;
   font-family: "Inter_18pt-SemiBold", sans-serif;
   font-weight: 600;
-  font-size: 13px;
+  font-size: 18px;
   letter-spacing: 0.08em;
   color: #0f0f0f;
   border: 1px solid #c9a96e;
@@ -997,12 +1002,12 @@ input::-webkit-credentials-auto-fill {
 .hero__active-links .btn-outline-primary {
   border: 1px solid #c9a96e;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 18px;
   letter-spacing: 0.08em;
   line-height: normal;
   color: #c9a96e;
   border-radius: 3px;
-  padding: 16px 36px;
+  padding: 12px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1041,6 +1046,7 @@ input::-webkit-credentials-auto-fill {
   text-transform: uppercase;
   color: #b8b2ab;
   margin-bottom: 0;
+  padding-left: 10px;
 }
 
 .hero__slider {
@@ -1190,7 +1196,7 @@ input::-webkit-credentials-auto-fill {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 58px;
+  width: 62px;
 }
 
 .timer .count:last-of-type .count-number:after {
@@ -1203,10 +1209,11 @@ input::-webkit-credentials-auto-fill {
 }
 
 .timer .count-number {
-  font-family: 'Inter_18pt-Bold', sans-serif;
-  font-weight: 700;
-  font-size: 36px;
-  color: #fff;
+  font-family: 'EBGaramond-Medium', serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: normal;
+  color: #c9a96e;
   position: relative;
 }
 
@@ -1218,14 +1225,14 @@ input::-webkit-credentials-auto-fill {
   font-size: 32px;
   color: #c9a96e;
   position: absolute;
-  top: calc(50% - 20px);
+  top: calc(50% - 18px);
   right: -5px;
   line-height: 100%;
 }
 
 .timer .measure {
   font-weight: 400;
-  font-size: 10px;
+  font-size: 14px;
   letter-spacing: 0.1em;
   color: #b8b2ab;
   text-transform: uppercase;
@@ -1267,7 +1274,7 @@ input::-webkit-credentials-auto-fill {
 
 .current-auction__info-item {
   font-weight: 400;
-  font-size: 11px;
+  font-size: 14px;
   color: #0f0f0f;
   border: 1px solid #e0dbd6;
   border-radius: 2px;
@@ -1314,14 +1321,14 @@ input::-webkit-credentials-auto-fill {
   font-family: 'Inter_18pt-Medium', sans-serif;
   margin-bottom: 0;
   font-weight: 500;
-  font-size: 9px;
+  font-size: 14px;
   letter-spacing: 0.2em;
   color: #706b66;
   text-transform: uppercase;
 }
 
 .current-auction-action .count-number {
-  font-size: 28px;
+  font-size: 36px;
   line-height: normal;
   color: #0f0f0f;
 }
@@ -1329,19 +1336,20 @@ input::-webkit-credentials-auto-fill {
 .current-auction-action .count-number:after {
   font-size: 24px;
   line-height: normal;
-  color: #c9a96e;
-  top: calc(50% - 17px);
+  color: #0f0f0f;
+  top: calc(50% - 16px);
+  right: -4px;
 }
 
 .current-auction-action .measure {
-  font-size: 8px;
+  font-size: 12px;
   color: #706b66;
 }
 
 .current-auction__title {
   font-family: 'CormorantGaramond-Medium', serif;
   font-weight: 500;
-  font-size: 36px;
+  font-size: 48px;
   color: #0f0f0f;
   line-height: normal;
   margin-bottom: 0;
@@ -1359,11 +1367,11 @@ input::-webkit-credentials-auto-fill {
 }
 
 .current-auction__label {
-  font-family: 'Inter_18pt-SemiBold', sans-serif;
-  line-height: normal;
+  font-family: "Inter_18pt-SemiBold", sans-serif;
   font-weight: 600;
-  font-size: 10px;
+  font-size: 14px;
   letter-spacing: 0.25em;
+  line-height: normal;
   color: #c9a96e;
   text-transform: uppercase;
   margin-bottom: 0;
@@ -1399,7 +1407,7 @@ input::-webkit-credentials-auto-fill {
 .current-auction__read-more span {
   font-family: 'Inter_18pt-SemiBold', sans-serif;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 0.01em;
   color: #1c1c1c;
 }
@@ -1466,6 +1474,17 @@ input::-webkit-credentials-auto-fill {
   -o-object-fit: contain;
      object-fit: contain;
   background: #1F1C1A;
+  border-radius: 2px 2px 0 0;
+}
+
+.current-auction__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .current-auction__card-slider .carousel-control-prev {
@@ -1492,60 +1511,96 @@ input::-webkit-credentials-auto-fill {
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3crect x='0.3' y='0.3' width='23.4' height='23.4' rx='11.7' fill='%23C9A96E' /%3e%3crect x='0.3' y='0.3' width='23.4' height='23.4' rx='11.7' stroke='%2347423B' stroke-width='0.6' /%3e%3cpath d='M12.4534 15.0545L11.9284 14.5363L14.0897 12.375H8.492V11.625H14.0897L11.9284 9.47043L12.4534 8.94543L15.5079 12L12.4534 15.0545Z' fill='%231C1C1C' /%3e%3c/svg%3e");
 }
 
+.current-auction__card-info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0;
+          flex: 1 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .current-auction__card-info-wrapper {
-  padding: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0;
+          flex: 1 0;
+  height: 100%;
+  padding: 20px 20px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.current-auction__card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 8px;
 }
 
 .current-auction__card-label {
   font-family: 'Inter_18pt-SemiBold', sans-serif;
   font-weight: 600;
-  font-size: 9px;
+  font-size: 14px;
   letter-spacing: 0.15em;
   color: #c9a96e;
   line-height: normal;
-  margin-bottom: 8px;
+  margin-bottom: 0;
   text-transform: uppercase;
 }
 
 .current-auction__card-title {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0;
+          flex: 1 0;
+  margin-bottom: 0;
+}
+
+.current-auction__card-title > a {
   font-weight: 400;
   font-size: 16px;
   line-height: 138%;
   color: #0f0f0f;
-  margin-bottom: 8px;
   text-decoration: none;
-}
-
-.current-auction__card-type {
-  font-weight: 400;
-  font-size: 11px;
-  color: #706b66;
-  line-height: normal;
-  opacity: 0.75;
-  margin-bottom: 8px;
-}
-
-.current-auction__card-estimate {
-  border-top: 1px solid #e0dbd6;
-  padding-top: 8px;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 150%;
-  color: #706b66;
-  margin-bottom: 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .current-auction__card-price {
   font-family: 'Inter_18pt-SemiBold', sans-serif;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 26px;
   line-height: 143%;
   color: #0f0f0f;
   margin-bottom: 0;
   text-transform: uppercase;
 }
 
+.current-auction__card-price span {
+  font-size: 14px;
+  color: #706b66;
+}
+
 .current-auction__card-price-wrapper {
+  border-top: 1px solid #e0dbd6;
+  padding-top: 8px;
+  margin-top: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1557,30 +1612,30 @@ input::-webkit-credentials-auto-fill {
           justify-content: space-between;
 }
 
-.current-auction__card-price-wrapper > div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.current-auction__card-bids {
+  font-family: 'Inter_18pt-Medium', sans-serif;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 143%;
+  letter-spacing: 0.15em;
+  margin-bottom: 0;
+  color: #706b66;
 }
 
 .current-auction__card-auction {
   font-family: 'Inter_18pt-Medium', sans-serif;
   font-weight: 500;
-  font-size: 8px;
+  font-size: 11px;
   line-height: normal;
   letter-spacing: 0.15em;
   color: #706b66;
-  margin-bottom: 2px;
+  margin-bottom: 0;
 }
 
 .current-auction__card-like {
   font-weight: 400;
   line-height: normal;
-  font-size: 11px;
+  font-size: 14px;
   color: #706b66;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1708,8 +1763,8 @@ input::-webkit-credentials-auto-fill {
 
 .why-us__item p {
   font-weight: 400;
-  font-size: 10px;
-  letter-spacing: 0.15em;
+  font-size: 12px;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #8e8881;
   margin-bottom: 0;
@@ -1739,10 +1794,11 @@ input::-webkit-credentials-auto-fill {
 }
 
 .subscription__label {
-  font-family: "Inter_18pt-Medium", sans-serif;
-  font-weight: 500;
-  font-size: 10px;
-  letter-spacing: 0.3em;
+  font-family: "Inter_18pt-SemiBold", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.25em;
+  line-height: normal;
   color: #8e8881;
   margin-bottom: 16px;
 }
@@ -1758,7 +1814,7 @@ input::-webkit-credentials-auto-fill {
 
 .subscription__text {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 168%;
   color: #8e8881;
   margin-bottom: 16px;
@@ -1781,7 +1837,7 @@ input::-webkit-credentials-auto-fill {
 
 .subscription__item {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   line-height: normal;
   color: #1c1c1c;
   padding: 5px 12px 5px 22px;
@@ -1792,11 +1848,11 @@ input::-webkit-credentials-auto-fill {
 .subscription__item:after {
   content: "";
   background: #c9a96e;
-  width: 4px;
-  height: 4px;
+  width: 6px;
+  height: 6px;
   display: block;
   position: absolute;
-  left: 12px;
+  left: 10px;
   top: 50%;
   border-radius: 50%;
   -webkit-transform: translateY(-50%);
@@ -1917,21 +1973,22 @@ input::-webkit-credentials-auto-fill {
   left: 0;
   bottom: -16px;
   font-weight: 400;
-  font-size: 11px;
+  font-size: 12px;
   color: #d10e1f;
   line-height: normal;
   white-space: nowrap;
+  margin-top: 0;
 }
 
 .subscription__form-item .btn-primary {
   white-space: nowrap;
   border-radius: 4px;
-  padding: 16px 24px;
+  padding: 12px 24px;
   width: 100%;
   background: #c9a96e;
   font-family: "Inter_18pt-SemiBold", sans-serif;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 16px;
   letter-spacing: 0.05em;
   line-height: normal;
   color: #0f0f0f;
@@ -1975,10 +2032,11 @@ input::-webkit-credentials-auto-fill {
 }
 
 .bid__label {
-  font-family: "Inter_18pt-Medium", sans-serif;
-  font-weight: 500;
-  font-size: 10px;
-  letter-spacing: 0.3em;
+  font-family: "Inter_18pt-SemiBold", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.25em;
+  line-height: normal;
   color: #8e8881;
   margin-bottom: 8px;
   text-align: center;
@@ -1988,7 +2046,7 @@ input::-webkit-credentials-auto-fill {
 .bid__title {
   font-family: 'CormorantGaramond-Regular', serif;
   font-weight: 400;
-  font-size: 44px;
+  font-size: 48px;
   color: #0f0f0f;
   margin-bottom: 56px;
   text-align: center;
@@ -2009,7 +2067,7 @@ input::-webkit-credentials-auto-fill {
 }
 
 .bid__item {
-  padding: 44px 36px;
+  padding: 30px 24px;
   max-width: 282px;
   width: 100%;
   background: #f8f6f1;
@@ -2019,7 +2077,7 @@ input::-webkit-credentials-auto-fill {
   font-family: 'CormorantGaramond-Regular', serif;
   font-weight: 400;
   font-size: 44px;
-  line-height: normal;
+  line-height: 30px;
   color: #c9a96e;
   margin-bottom: 16px;
   display: block;
@@ -2028,15 +2086,15 @@ input::-webkit-credentials-auto-fill {
 .bid__item h3 {
   font-family: 'CormorantGaramond-Regular', serif;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 26px;
   color: #0f0f0f;
   margin-bottom: 16px;
 }
 
 .bid__item p {
   font-weight: 400;
-  font-size: 13px;
-  line-height: 165%;
+  font-size: 14px;
+  line-height: 145%;
   color: #8e8881;
   margin-bottom: 0;
 }
@@ -2057,11 +2115,11 @@ input::-webkit-credentials-auto-fill {
 }
 
 .buy-now__label {
-  font-family: 'Inter_18pt-SemiBold', sans-serif;
+  font-family: "Inter_18pt-SemiBold", sans-serif;
   font-weight: 600;
-  font-size: 9px;
+  font-size: 14px;
+  letter-spacing: 0.25em;
   line-height: normal;
-  letter-spacing: 0.04em;
   color: #c9a96e;
   border: 1px solid #594d38;
   border-radius: 3px;
@@ -2074,7 +2132,7 @@ input::-webkit-credentials-auto-fill {
 .buy-now__title {
   font-family: 'CormorantGaramond-Medium', serif;
   font-weight: 500;
-  font-size: 44px;
+  font-size: 48px;
   line-height: 110%;
   color: #f8f6f1;
   margin-bottom: 12px;
@@ -2082,7 +2140,7 @@ input::-webkit-credentials-auto-fill {
 
 .buy-now__text {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 158%;
   color: #8c857a;
 }
@@ -2106,6 +2164,13 @@ input::-webkit-credentials-auto-fill {
   background: #151412;
   max-width: 292px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .buy-now__item-img {
@@ -2138,63 +2203,84 @@ input::-webkit-credentials-auto-fill {
 }
 
 .buy-now__item-info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0;
+          flex: 1 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 16px 18px 20px;
 }
 
 .buy-now__item-name {
   font-family: 'Inter_18pt-Medium', sans-serif;
   font-weight: 500;
-  font-size: 11px;
+  font-size: 14px;
   color: #999185;
   line-height: normal;
-  margin-bottom: 6px;
+  text-transform: uppercase;
+  margin-bottom: 0;
 }
 
 .buy-now__item-title {
-  font-family: 'CormorantGaramond-SemiBold', serif;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 120%;
-  color: #f8f6f1;
-  text-decoration: none;
-  margin-bottom: 6px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0;
+          flex: 1 0;
+  margin-bottom: 10px;
 }
 
-.buy-now__item-type {
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 140%;
-  color: #6b665e;
-  border-bottom: 1px solid #2e2b26;
-  padding-bottom: 6px;
-  margin-bottom: 6px;
+.buy-now__item-title > a {
+  font-family: 'CormorantGaramond-SemiBold', serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: normal;
+  color: #f8f6f1;
+  text-decoration: none;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .buy-now__item-label {
+  border-top: 1px solid #2e2b26;
+  padding-top: 6px;
+  display: block;
   font-weight: 400;
-  font-size: 9px;
+  font-size: 14px;
   letter-spacing: 0.01em;
   color: #666159;
   margin-bottom: 0;
 }
 
 .buy-now__item-price {
-  font-family: 'CormorantGaramond-SemiBold', serif;
-  font-weight: 600;
-  font-size: 22px;
+  font-family: 'EBGaramond-Medium', serif;
+  font-weight: 500;
+  font-size: 26px;
   color: #c9a96e;
   margin-bottom: 6px;
+}
+
+.buy-now__item-price span {
+  font-family: "Inter_18pt-SemiBold", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #706b66;
 }
 
 .buy-now__item-buy {
   white-space: nowrap;
   border-radius: 4px;
-  padding: 16px 24px;
+  padding: 12px 24px;
   width: 100%;
   background: #c9a96e;
   font-family: "Inter_18pt-SemiBold", sans-serif;
   font-weight: 600;
-  font-size: 13px;
+  font-size: 18px;
   line-height: normal;
   color: #1c1c1c;
   display: -webkit-box;
@@ -2225,7 +2311,6 @@ input::-webkit-credentials-auto-fill {
 }
 
 .buy-now__item-action {
-  margin-top: 6px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2235,6 +2320,7 @@ input::-webkit-credentials-auto-fill {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 6px;
 }
 
 .buy-now__item-like {
@@ -2246,50 +2332,28 @@ input::-webkit-credentials-auto-fill {
           align-items: center;
   grid-gap: 4px;
   font-weight: 400;
-  font-size: 11px;
-  color: #666159;
+  font-size: 14px;
+  color: #8d8b84;
   border: none;
   background: transparent;
   padding: 0;
 }
 
 .buy-now__item-like:hover path {
-  stroke: #666159;
+  stroke: #8d8b84;
 }
 
 .buy-now__item-like:hover span {
-  color: #666159;
+  color: #8d8b84;
 }
 
 .buy-now__item-like.liked path {
-  fill: #666159;
-  stroke: #666159;
+  fill: #8d8b84;
+  stroke: #8d8b84;
 }
 
 .buy-now__item-like.liked span {
-  color: #666159;
-}
-
-.buy-now__item-request {
-  text-decoration: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  grid-gap: 4px;
-  font-weight: 400;
-  font-size: 11px;
-  color: #666159;
-}
-
-.buy-now__item-request:hover path {
-  stroke: #c9a96e;
-}
-
-.buy-now__item-request:hover span {
-  color: #c9a96e;
+  color: #8d8b84;
 }
 
 .buy-now__link {
@@ -2302,12 +2366,12 @@ input::-webkit-credentials-auto-fill {
   border: 1px solid #c9a96e;
   font-family: "Inter_18pt-Medium", sans-serif;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 0.05em;
   line-height: normal;
   color: #c9a96e;
   border-radius: 3px;
-  padding: 16px 36px;
+  padding: 12px 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2374,7 +2438,7 @@ input::-webkit-credentials-auto-fill {
 .insights__title {
   font-family: 'CormorantGaramond-Medium', serif;
   font-weight: 500;
-  font-size: 36px;
+  font-size: 48px;
   color: #0f0f0f;
   line-height: normal;
   margin-bottom: 0;
@@ -2392,17 +2456,17 @@ input::-webkit-credentials-auto-fill {
 }
 
 .insights__label {
-  font-family: 'Inter_18pt-Medium', serif;
+  font-family: "Inter_18pt-SemiBold", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.25em;
   line-height: normal;
-  font-weight: 500;
-  font-size: 10px;
-  letter-spacing: 0.08em;
   color: #c9a96e;
   margin-bottom: 0;
 }
 
 .insights__read-more {
-  border: 1px solid #e0ddd8;
+  border: 1px solid #0f0f0f;
   border-radius: 2px;
   padding: 12px 20px;
   display: -webkit-box;
@@ -2428,7 +2492,7 @@ input::-webkit-credentials-auto-fill {
 .insights__read-more span {
   font-family: 'Inter_18pt-Medium', sans-serif;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 0.01em;
   color: #1c1c1c;
 }
@@ -2468,7 +2532,7 @@ input::-webkit-credentials-auto-fill {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  padding: 18px 24px 24px;
+  padding: 12px 24px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2485,13 +2549,17 @@ input::-webkit-credentials-auto-fill {
 }
 
 .insights__article-info__title {
+  line-height: normal;
+  margin-bottom: 14px;
+}
+
+.insights__article-info__title > a {
   font-family: 'CormorantGaramond-SemiBold', serif;
   font-weight: 600;
-  font-size: 20px;
-  line-height: 122%;
+  font-size: 24px;
+  line-height: normal;
   color: #0f0f0f;
-  margin-bottom: 14px;
-  padding-right: 20px;
+  text-decoration: none;
 }
 
 .insights__article-info__text {
@@ -2499,16 +2567,20 @@ input::-webkit-credentials-auto-fill {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 158%;
+  font-size: 14px;
+  line-height: 138%;
   color: #8e8881;
-  margin-bottom: 10px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 6px;
 }
 
 .insights__article-info__link {
   font-family: 'Inter_18pt-Medium', sans-serif;
   font-weight: 500;
-  font-size: 11px;
+  font-size: 14px;
   color: #c9a96e;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2527,11 +2599,10 @@ input::-webkit-credentials-auto-fill {
 .insights__img {
   border-radius: 4px 4px 0 0;
   width: 100%;
-  height: 100%;
+  height: 192px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-height: 192px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -2551,12 +2622,12 @@ input::-webkit-credentials-auto-fill {
   text-transform: uppercase;
   font-family: 'Inter_18pt-SemiBold', sans-serif;
   font-weight: 600;
-  font-size: 9px;
+  font-size: 12px;
   letter-spacing: 0.03em;
   color: #c9a96e;
   background: #f1ede6;
   border-radius: 3px;
-  padding: 4px 9px;
+  padding: 4px 8px;
   position: absolute;
   top: 24px;
   left: 24px;
@@ -2588,10 +2659,11 @@ input::-webkit-credentials-auto-fill {
 }
 
 .faq__label {
-  font-family: 'Inter_18pt-SemiBold', serif;
+  font-family: "Inter_18pt-SemiBold", sans-serif;
   font-weight: 600;
-  font-size: 10px;
-  letter-spacing: 0.06em;
+  font-size: 14px;
+  letter-spacing: 0.25em;
+  line-height: normal;
   color: #c9a96e;
   text-transform: uppercase;
   margin-bottom: 26px;
@@ -2620,7 +2692,7 @@ input::-webkit-credentials-auto-fill {
 
 .faq__text {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 162%;
   color: #8e8881;
   margin-bottom: 28px;
@@ -2636,14 +2708,15 @@ input::-webkit-credentials-auto-fill {
 .faq__question-title {
   font-family: 'CormorantGaramond-SemiBold', serif;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 24px;
+  line-height: normal;
   color: #0f0f0f;
   margin-bottom: 14px;
 }
 
 .faq__question-text {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 155%;
   color: #8e8881;
   margin-bottom: 14px;
@@ -2652,7 +2725,7 @@ input::-webkit-credentials-auto-fill {
 .faq__question .btn-question {
   font-family: 'Inter_18pt-SemiBold', serif;
   font-weight: 600;
-  font-size: 13px;
+  font-size: 14px;
   color: #fff;
   border-radius: 3px;
   padding: 11px 20px;
@@ -2669,13 +2742,13 @@ input::-webkit-credentials-auto-fill {
 
 .faq__item {
   border-bottom: 1px solid #d7d3cd;
-  padding: 27px 0;
+  padding: 20px 0;
 }
 
 .faq__item h2 {
   font-family: 'Inter_18pt-Medium', serif;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 148%;
   color: #0f0f0f;
   width: 100%;
@@ -2705,10 +2778,10 @@ input::-webkit-credentials-auto-fill {
 
 .faq__item > div p {
   border: none;
-  padding: 28px 0 0;
+  padding: 20px 0 0;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 164%;
+  font-size: 16px;
+  line-height: 144%;
   color: #8e8881;
   background: transparent;
 }
@@ -2728,14 +2801,14 @@ input::-webkit-credentials-auto-fill {
 
 .footer__info address {
   font-weight: 400;
-  font-size: 13px;
+  font-size: 14px;
   color: #66615c;
   margin-bottom: 0;
 }
 
 .footer__info a:not(.footer__logo) {
   font-weight: 400;
-  font-size: 13px;
+  font-size: 14px;
   color: #66615c;
   text-decoration: none;
   white-space: nowrap;
@@ -2801,7 +2874,7 @@ input::-webkit-credentials-auto-fill {
 .footer__nav-list h2 {
   font-family: "Inter_18pt-SemiBold", sans-serif;
   font-weight: 600;
-  font-size: 10px;
+  font-size: 14px;
   letter-spacing: 0.25em;
   color: #c9a96e;
   margin-bottom: 0;
@@ -2809,7 +2882,7 @@ input::-webkit-credentials-auto-fill {
 
 .footer__nav-list a {
   font-weight: 400;
-  font-size: 13px;
+  font-size: 14px;
   color: #706b66;
   text-decoration: none;
   white-space: nowrap;
@@ -2847,10 +2920,6 @@ input::-webkit-credentials-auto-fill {
     display: block;
   }
 
-  .btn-register-log .btn-primary {
-    width: 102px;
-  }
-
   .hero-wrapper {
     padding: 48px 0;
   }
@@ -2861,6 +2930,10 @@ input::-webkit-credentials-auto-fill {
 
   .current-auction-wrapper {
     padding: 48px 0;
+  }
+
+  .current-auction__title {
+    font-size: 40px;
   }
 
   .current-auction__item {
@@ -2882,8 +2955,16 @@ input::-webkit-credentials-auto-fill {
     margin-bottom: 40px;
   }
 
+  .subscription__title {
+    font-size: 40px;
+  }
+
   .subscription__form-wrapper {
     max-width: 100%;
+  }
+
+  .bid__title {
+    font-size: 40px;
   }
 
   .bid__list {
@@ -2900,12 +2981,16 @@ input::-webkit-credentials-auto-fill {
     padding: 40px 0;
   }
 
+  .buy-now__title {
+    font-size: 40px;
+  }
+
   .buy-now__item {
     max-width: calc(50% - 10px);
   }
 
-  .insights__article-info__title {
-    padding-right: 0;
+  .insights__title {
+    font-size: 40px;
   }
 
   .faq {
@@ -2922,6 +3007,10 @@ input::-webkit-credentials-auto-fill {
 
   .faq__info {
     max-width: 100%;
+  }
+
+  .faq__title {
+    font-size: 40px;
   }
 
   .faq__list {
@@ -3108,12 +3197,16 @@ input::-webkit-credentials-auto-fill {
 }
 
 @media screen and (max-width: 580px) {
+  .current-auction__title {
+    font-size: 32px;
+  }
+
   .subscription-wrapper {
     padding: 40px 0;
   }
 
   .subscription__title {
-    font-size: 34px;
+    font-size: 32px;
   }
 
   .subscription__form-wrapper {
@@ -3153,6 +3246,14 @@ input::-webkit-credentials-auto-fill {
   .bid__item p {
     font-size: 16px;
   }
+
+  .buy-now__title {
+    font-size: 32px;
+  }
+
+  .insights__title {
+    font-size: 32px;
+  }
 }
 
 @media screen and (max-width: 520px) {
@@ -3168,10 +3269,6 @@ input::-webkit-credentials-auto-fill {
 
   .current-auction__item {
     max-width: 100%;
-  }
-
-  .buy-now__title {
-    font-size: 32px;
   }
 
   .buy-now__list {
@@ -3193,10 +3290,6 @@ input::-webkit-credentials-auto-fill {
 
   .insights__info {
     margin-bottom: 32px;
-  }
-
-  .insights__title {
-    font-size: 26px;
   }
 
   .insights__read-more {

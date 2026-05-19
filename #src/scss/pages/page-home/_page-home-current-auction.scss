@@ -31,7 +31,7 @@
 		}
 		&-item {
 			font-weight: 400;
-			font-size: 11px;
+			font-size: 14px;
 			color: #0f0f0f;
 			border: 1px solid #e0dbd6;
 			border-radius: 2px;
@@ -70,34 +70,41 @@
 			font-family: 'Inter_18pt-Medium', sans-serif;
 			margin-bottom: 0;
 			font-weight: 500;
-			font-size: 9px;
+			font-size: 14px;
 			letter-spacing: 0.2em;
 			color: #706b66;
 			text-transform: uppercase;
 		}
 		& .count-number {
-			font-size: 28px;
+			font-size: 36px;
 			line-height: normal;
 			color: #0f0f0f;
 			&:after {
 				font-size: 24px;
 				line-height: normal;
-				color: #c9a96e;
-				top: calc(50% - 17px);
+				color: #0f0f0f;
+				top: calc(50% - 16px);
+				right: -4px;
 			}
 		}
 		& .measure {
-			font-size: 8px;
+			font-size: 12px;
 			color: #706b66;
 		}
 	}
 	&__title {
 		font-family: 'CormorantGaramond-Medium', serif;
 		font-weight: 500;
-		font-size: 36px;
+		font-size: 48px;
 		color: #0f0f0f;
 		line-height: normal;
 		margin-bottom: 0;
+		@media screen and (max-width: 992px) {
+			font-size: 40px;
+		}
+		@media screen and (max-width: 580px) {
+			font-size: 32px;
+		}
 		&-wrapper {
 			display: flex;
 			flex-direction: column;
@@ -105,11 +112,11 @@
 		}
 	}
 	&__label {
-		font-family: 'Inter_18pt-SemiBold', sans-serif;
-		line-height: normal;
+		font-family: "Inter_18pt-SemiBold", sans-serif;
 		font-weight: 600;
-		font-size: 10px;
+		font-size: 14px;
 		letter-spacing: 0.25em;
+		line-height: normal;
 		color: #c9a96e;
 		text-transform: uppercase;
 		margin-bottom: 0;
@@ -134,7 +141,7 @@
 		& span {
 			font-family: 'Inter_18pt-SemiBold', sans-serif;
 			font-weight: 500;
-			font-size: 12px;
+			font-size: 14px;
 			letter-spacing: 0.01em;
 			color: #1c1c1c;
 		}
@@ -196,10 +203,13 @@
 				height: 320px;
 				object-fit: contain;
 				background: #1F1C1A;
+				border-radius: 2px 2px 0 0;
 			}
 		}
 	}
 	&__card {
+		display: flex;
+		flex-direction: column;
 		&-slider {
 			& .carousel-control-prev {
 				opacity: 1;
@@ -221,76 +231,92 @@
 			}
 		}
 		&-info {
+			flex: 1 0;
+			display: flex;
+			flex-direction: column;
 			&-wrapper {
-				padding: 20px;
+				flex: 1 0;
+				height: 100%;
+				padding: 20px 20px 10px;
+				display: flex;
+				flex-direction: column;
 			}
+		}
+		&-header {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin-bottom: 8px;
 		}
 		&-label {
 			font-family: 'Inter_18pt-SemiBold', sans-serif;
 			font-weight: 600;
-			font-size: 9px;
+			font-size: 14px;
 			letter-spacing: 0.15em;
 			color: #c9a96e;
 			line-height: normal;
-			margin-bottom: 8px;
+			margin-bottom: 0;
 			text-transform: uppercase;
 		}
 		&-title {
-			font-weight: 400;
-			font-size: 16px;
-			line-height: 138%;
-			color: #0f0f0f;
-			margin-bottom: 8px;
-			text-decoration: none;
-		}
-		&-type {
-			font-weight: 400;
-			font-size: 11px;
-			color: #706b66;
-			line-height: normal;
-			opacity: 0.75;
-			margin-bottom: 8px;
-		}
-		&-estimate {
-			border-top: 1px solid #e0dbd6;
-			padding-top: 8px;
-			font-weight: 400;
-			font-size: 10px;
-			line-height: 150%;
-			color: #706b66;
-			margin-bottom: 20px;
+			flex: 1 0;
+			margin-bottom: 0;
+			& > a {
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 138%;
+				color: #0f0f0f;
+				text-decoration: none;
+				display: -webkit-box;
+				-webkit-line-clamp: 2;
+				-webkit-box-orient: vertical;
+				overflow: hidden;
+			}
 		}
 		&-price {
 			font-family: 'Inter_18pt-SemiBold', sans-serif;
 			font-weight: 600;
-			font-size: 14px;
+			font-size: 26px;
 			line-height: 143%;
 			color: #0f0f0f;
 			margin-bottom: 0;
 			text-transform: uppercase;
+			& span {
+				font-size: 14px;
+				color: #706b66;
+			}
 			&-wrapper {
+				border-top: 1px solid #e0dbd6;
+				padding-top: 8px;
+				margin-top: 8px;
 				display: flex;
 				align-items: center;
 				justify-content: space-between;
-				& >div {
-					display: flex;
-					flex-direction: column;
-				}
 			}
 		}
-		&-auction {
+		&-bids {
 			font-family: 'Inter_18pt-Medium', sans-serif;
 			font-weight: 500;
-			font-size: 8px;
+			font-size: 11px;
+			line-height: 143%;
+			letter-spacing: 0.15em;
+			margin-bottom: 0;
+			color: #706b66;
+		}
+		&-auction {
+		
+			font-family: 'Inter_18pt-Medium', sans-serif;
+			font-weight: 500;
+			font-size: 11px;
 			line-height: normal;
 			letter-spacing: 0.15em;
 			color: #706b66;
-			margin-bottom: 2px;
+			margin-bottom: 0;
 		}
 		&-like {
 			font-weight: 400;
 			line-height: normal;
-			font-size: 11px;
+			font-size: 14px;
 			color: #706b66;
 			display: flex;
 			align-items: center;

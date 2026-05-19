@@ -23,10 +23,11 @@
 		}
 	}
 	&__label {
-		font-family: "Inter_18pt-Medium", sans-serif;
-		font-weight: 500;
-		font-size: 10px;
-		letter-spacing: 0.3em;
+		font-family: "Inter_18pt-SemiBold", sans-serif;
+		font-weight: 600;
+		font-size: 14px;
+		letter-spacing: 0.25em;
+		line-height: normal;
 		color: #8e8881;
 		margin-bottom: 16px;
 	}
@@ -37,13 +38,16 @@
 		line-height: 108%;
 		color: #0f0f0f;
 		margin-bottom: 16px;
+		@media screen and (max-width: 992px) {
+			font-size: 40px;
+		}
 		@media screen and (max-width: 580px) {
-			font-size: 34px;
+			font-size: 32px;
 		}
 	}
 	&__text {
 		font-weight: 400;
-		font-size: 14px;
+		font-size: 16px;
 		line-height: 168%;
 		color: #8e8881;
 		margin-bottom: 16px;
@@ -59,7 +63,7 @@
 	}
 	&__item {
 		font-weight: 400;
-		font-size: 12px;
+		font-size: 14px;
 		line-height: normal;
 		color: #1c1c1c;
 		padding: 5px 12px 5px 22px;
@@ -68,11 +72,11 @@
 		&:after {
 			content: "";
 			background: #c9a96e;
-			width: 4px;
-			height: 4px;
+			width: 6px;
+			height: 6px;
 			display: block;
 			position: absolute;
-			left: 12px;
+			left: 10px;
 			top: 50%;
 			border-radius: 50%;
 			transform: translateY(-50%);
@@ -162,21 +166,22 @@
 					left: 0;
 					bottom: -16px;
 					font-weight: 400;
-					font-size: 11px;
+					font-size: 12px;
 					color: #d10e1f;
 					line-height: normal;
 					white-space: nowrap;
+					margin-top: 0;
 				}
 			}
 			& .btn-primary {
 				white-space: nowrap;
 				border-radius: 4px;
-				padding: 16px 24px;
+				padding: 12px 24px;
 				width: 100%;
 				background: #c9a96e;
 				font-family: "Inter_18pt-SemiBold", sans-serif;
 				font-weight: 600;
-				font-size: 12px;
+				font-size: 16px;
 				letter-spacing: 0.05em;
 				line-height: normal;
 				color: #0f0f0f;
