@@ -207,7 +207,7 @@ input::-webkit-credentials-auto-fill {
 
 .header__logo img {
   display: block;
-  width: 165px;
+  width: 130px;
 }
 
 .header__actions {
@@ -874,7 +874,7 @@ input::-webkit-credentials-auto-fill {
 
 .banner-wrapper {
   background: #c9a96e;
-  padding: 17px 0;
+  padding: 20px 0;
 }
 
 .hero {
@@ -1675,6 +1675,15 @@ input::-webkit-credentials-auto-fill {
   font-size: 16px;
   letter-spacing: 0.05em;
   color: #fff;
+  outline: none;
+}
+
+.current-auction__card-btn:hover {
+  outline: none;
+}
+
+.current-auction__card-btn:active {
+  outline: none;
 }
 
 .current-auction__card-btn:after {
@@ -2234,10 +2243,9 @@ input::-webkit-credentials-auto-fill {
 }
 
 .buy-now__item-title > a {
-  font-family: 'CormorantGaramond-SemiBold', serif;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 138%;
   color: #f8f6f1;
   text-decoration: none;
   display: -webkit-box;
@@ -2258,9 +2266,10 @@ input::-webkit-credentials-auto-fill {
 }
 
 .buy-now__item-price {
-  font-family: 'EBGaramond-Medium', serif;
-  font-weight: 500;
+  font-family: 'Inter_18pt-SemiBold', sans-serif;
+  font-weight: 600;
   font-size: 26px;
+  line-height: 143%;
   color: #c9a96e;
   margin-bottom: 6px;
 }
@@ -2272,7 +2281,7 @@ input::-webkit-credentials-auto-fill {
   color: #706b66;
 }
 
-.buy-now__item-buy {
+.buy-now__item-buy.btn.btn-primary {
   white-space: nowrap;
   border-radius: 4px;
   padding: 12px 24px;
@@ -2295,17 +2304,17 @@ input::-webkit-credentials-auto-fill {
   border: none;
 }
 
-.buy-now__item-buy:hover {
+.buy-now__item-buy.btn.btn-primary:hover {
   background: #b8965c;
   color: #0f0f0f;
 }
 
-.buy-now__item-buy:active {
+.buy-now__item-buy.btn.btn-primary:active {
   background: #b8965c;
   color: #0f0f0f;
 }
 
-.buy-now__item-buy:disabled {
+.buy-now__item-buy.btn.btn-primary:disabled {
   background: #dec79e;
   opacity: 0.6;
 }
@@ -2901,10 +2910,6 @@ input::-webkit-credentials-auto-fill {
 @media screen and (max-width: 992px) {
   .header__nav {
     display: none;
-  }
-
-  .header__logo img {
-    width: 130px;
   }
 
   .header__actions-item:first-child {

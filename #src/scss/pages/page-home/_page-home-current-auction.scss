@@ -350,6 +350,13 @@
 			font-size: 16px;
 			letter-spacing: 0.05em;
 			color: #fff;
+			outline: none;
+			&:hover {
+				outline: none;
+			}
+			&:active {
+				outline: none;
+			}
 			&:after {
 				content: '';
 				background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M8.69271 12.6667L7.89063 11.875L11.1927 8.57296H2.64062V7.42712H11.1927L7.89063 4.13546L8.69271 3.33337L13.3594 8.00004L8.69271 12.6667Z' fill='%23C9A96E' /%3e%3c/svg%3e");

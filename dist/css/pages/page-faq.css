@@ -207,7 +207,7 @@ input::-webkit-credentials-auto-fill {
 
 .header__logo img {
   display: block;
-  width: 165px;
+  width: 130px;
 }
 
 .header__actions {
@@ -1112,10 +1112,6 @@ body {
 @media screen and (max-width: 992px) {
   .header__nav {
     display: none;
-  }
-
-  .header__logo img {
-    width: 130px;
   }
 
   .header__actions-item:first-child {

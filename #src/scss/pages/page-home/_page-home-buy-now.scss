@@ -117,10 +117,9 @@
 			flex: 1 0;
 			margin-bottom: 10px;
 			& > a {
-				font-family: 'CormorantGaramond-SemiBold', serif;
-				font-weight: 600;
-				font-size: 20px;
-				line-height: normal;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 138%;
 				color: #f8f6f1;
 				text-decoration: none;
 				display: -webkit-box;
@@ -141,9 +140,10 @@
 		}
 		
 		&-price {
-			font-family: 'EBGaramond-Medium', serif;
-			font-weight: 500;
+			font-family: 'Inter_18pt-SemiBold', sans-serif;
+			font-weight: 600;
 			font-size: 26px;
+			line-height: 143%;
 			color: #c9a96e;
 			margin-bottom: 6px;
 			@media screen and (max-width: 520px) {
@@ -157,7 +157,7 @@
 			}
 		}
 		
-		&-buy {
+		&-buy.btn.btn-primary {
 			white-space: nowrap;
 			border-radius: 4px;
 			padding: 12px 24px;
