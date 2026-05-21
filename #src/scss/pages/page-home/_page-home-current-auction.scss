@@ -335,39 +335,35 @@
 			}
 		}
 		&-buy {
+		
+		}
+		&-btn {
 			position: relative;
 			padding: 16px 20px;
 			width: 100%;
 			background: #0f0f0f;
 			border-radius: 0 0 2px 2px;
-		}
-		&-btn {
 			border: none;
-			padding: 0;
-			background: transparent;
 			font-family: 'Inter_18pt-Medium', sans-serif;
 			font-weight: 500;
 			font-size: 16px;
 			letter-spacing: 0.05em;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
 			color: #fff;
+			text-align: left;
 			outline: none;
 			&:hover {
 				outline: none;
+				color: #0f0f0f;
+				background: #c9a96e;
+				& path {
+					fill: #0f0f0f;
+				}
 			}
 			&:active {
 				outline: none;
-			}
-			&:after {
-				content: '';
-				background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M8.69271 12.6667L7.89063 11.875L11.1927 8.57296H2.64062V7.42712H11.1927L7.89063 4.13546L8.69271 3.33337L13.3594 8.00004L8.69271 12.6667Z' fill='%23C9A96E' /%3e%3c/svg%3e");
-				background-size: 16px 16px;
-				width: 16px;
-				height: 16px;
-				display: block;
-				position: absolute;
-				right: 20px;
-				top: 50%;
-				transform: translateY(-50%) ;
 			}
 		}
 	}
