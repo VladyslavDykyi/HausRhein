@@ -1,9 +1,5 @@
 @charset "UTF-8";
 
-html {
-  scrollbar-gutter: stable;
-}
-
 body {
   overflow-x: hidden;
   font-family: "Inter_18pt-Regular", sans-serif;
