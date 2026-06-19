@@ -152,8 +152,8 @@
 				</div>
 <!--				в залежності від того увійшов до сайту користувач чи ні, відображається блок що нижче або закоментованний-->
 				<div class="header__actions-item btn-register-log">
-					<button type="button" class="btn btn-dark">Sign in</button>
-					<button type="button" class="btn btn-primary">Register & Bid</button>
+					<button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#loginModal">Sign in</button>
+					<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registrationModal">Register & Bid</button>
 				</div>
 <!--				<div class="header__actions-item">-->
 <!--					<div class="dropdown profile">-->
@@ -227,6 +227,7 @@
 		</div>
 	</div>
 </header>
+
 <header class="mobil-menu offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
 	<div class="offcanvas-header">
 		<a class="header__logo" href="">
@@ -380,7 +381,7 @@
 		</div>
 	</div>
 	<div class="offcanvas-footer btn-register-log">
-		<button type="button" class="btn btn-primary">Register & Bid</button>
-		<button type="button" class="btn btn-dark">Sign in</button>
+		<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registrationModal">Register & Bid</button>
+		<button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#loginModal">Sign in</button>
 	</div>
 </header>
