@@ -5,27 +5,18 @@
 	<meta name="viewport"
 		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Page-home</title>
+	<title>Page-current-sale</title>
 	<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="./css/default/style.min.css">
 	<link rel="stylesheet" href="./css/lib/bootstrap.v5.3.3.min.css">
 	<link rel="stylesheet" href="./css/lib/select2.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
-	<link rel="stylesheet" href="./css/pages/page-home.min.css">
+	<link rel="stylesheet" href="./css/pages/page-current-sale.min.css">
 </head>
 <body class="d-flex flex-column min-vh-100">
 @@include('./html/_header.html')
-@@include('./html/page-home/_page-home-banner.html')
 <main class="wrapper">
-	@@include('./html/page-home/_page-home-hero.html')
-	@@include('./html/page-home/_page-home-banners.html')
-	@@include('./html/page-home/_page-home-current-auction.html')
-	@@include('./html/page-home/_page-home-why-us.html')
-	@@include('./html/page-home/_page-home-subscription-form.html')
-	@@include('./html/page-home/_page-home-bid.html')
-	@@include('./html/page-home/_page-home-buy-now.html')
-	@@include('./html/page-home/_page-home-insights.html')
-	@@include('./html/_block-faq.html')
+	@@include('./html/page-current-sale/_page-current-sale.html')
 </main>
 @@include('./html/_footer.html')
 <!-- початок цей блок ще в розробці _modal	-->
@@ -37,21 +28,25 @@
 <script src="./js/lib/bootstrap.v5.3.3.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
-<script src="./js/pages/page-home.min.js" type="module"></script>
+<script src="./js/pages/page-current-sale.min.js" type="module"></script>
 <script>
-	<!-- код для відкривання модалки призавантаженні сторінки -->
-	// document.addEventListener('DOMContentLoaded', function () {
-	// 	const modal = new bootstrap.Modal(document.querySelector('#resetPasswordChangeModal'));
-	// 	modal.show();
-	// });
-	
 	$(document).ready(function() {
 		$('.mySelect-increase').select2({
 			width: '100%',
 			dropdownParent: $('#placeBidModal')
 		});
+		$('#mySelect-author').select2({
+			width: '100%',
+		});
+		$('#mySelect-sort').select2({
+			width: '100%',
+			minimumResultsForSearch: -1
+		});
+		$('#mySelect-view').select2({
+			width: '100%',
+			minimumResultsForSearch: -1
+		});
 	});
 </script>
-
 </body>
 </html>

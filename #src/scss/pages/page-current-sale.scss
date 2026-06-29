@@ -1,0 +1,14 @@
+@import "_default";
+@import "_header";
+@import "./_timer";
+@import "./page-current-sale/_page-current-sale-hero.scss";
+@import "./page-current-sale/_page-current-sale-filter.scss";
+@import "./page-current-sale/_page-current-sale-list.scss";
+@import "_pagination";
+@import "_footer";
+@import "./modals/_modal-login";
+@import "../default/_select2.scss";
+
+.current-sale {
+	background-color: #faf7f2;
+}

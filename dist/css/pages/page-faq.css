@@ -19,6 +19,16 @@ input::-webkit-credentials-auto-fill {
   color: inherit !important;
 }
 
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+}
+
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
 .filter select {
   -webkit-appearance: none;
   -moz-appearance: none;

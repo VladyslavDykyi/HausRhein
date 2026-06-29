@@ -1,0 +1,89 @@
+.pagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	grid-gap: 4px;
+	padding: 12px 0;
+	&-bg {
+		padding: 32px 0 72px;
+		@media screen and (max-width: 992px) {
+			padding: 24px 0 48px;
+		}
+		@media screen and (max-width: 768px) {
+			padding: 20px 0 40px;
+		}
+	}
+	& .page-item {
+		&.active {
+			& .page-link {
+				background: #151412;
+				font-weight: 600;
+				color: #faf7f2;
+			}
+		}
+		& .grey {
+			display: none;
+		}
+		&.last {
+			& .page-link {
+				cursor: auto;
+				color: #e0dbd6;
+				border-color: #e0dbd6;
+			}
+			& .gold {
+				display: none;
+			}
+			& .grey {
+				display: block;
+			}
+		}
+		&:first-child a {
+			font-weight: 400;
+			font-size: 14px;
+			color: #151412;
+			border: 1px solid #e0dbd6;
+			padding: 10px;
+			width: 104px;
+			margin-right: 12px;
+			&:hover {
+				background: transparent;
+			}
+		}
+		&:last-child a {
+			font-weight: 400;
+			font-size: 14px;
+			color: #151412;
+			border: 1px solid #e0dbd6;
+			padding: 10px;
+			width: 80px;
+			margin-left: 12px;
+			&:hover {
+				background: transparent;
+			}
+		}
+	}
+	& .page-link {
+		width: 36px;
+		height: 36px;
+		border-radius: 2px;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: normal;
+		color: #706b66;
+		text-decoration: none;
+		border: none;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		grid-gap: 6px;
+		background: transparent;
+		&:hover {
+			background: #151412;
+			color: #faf7f2;
+		}
+		&:focus {
+			box-shadow: none;
+			background: transparent;
+		}
+	}
+}

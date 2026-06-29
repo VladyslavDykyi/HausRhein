@@ -1,0 +1,143 @@
+.filter {
+	&-bg {
+		padding: 40px 0 32px;
+		
+	}
+	&__form {
+		display: flex;
+		align-items: center;
+		grid-gap: 12px;
+		width: 100%;
+		@media screen and (max-width: 992px) {
+			flex-direction: column;
+		}
+		&-left {
+			display: flex;
+			align-items: center;
+			grid-gap: 16px;
+			flex: 0 1 auto;
+			@media screen and (max-width: 992px) {
+				flex: 1 1 100%;
+				width: 100%;
+				justify-content: space-between;
+			}
+			& label {
+				flex: 0 1 auto;
+				@media screen and (max-width: 992px) {
+					width: 100%;
+				}
+			}
+			& input.form-control {
+				border: 1px solid #e0ddd8;
+				border-radius: 4px;
+				padding: 12px 16px 11px;
+				width: 100%;
+				height: 42px;
+				background: #fff;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: normal;
+				color: #1F1C1A;
+				&::placeholder {
+					font-weight: 400;
+					font-size: 14px;
+					line-height: normal;
+					color: #b2ada8;
+				}
+				&:focus {
+					box-shadow: none;
+					border: 1px solid #c9a96e;
+					& ~ label:after {
+						background-color: transparent;
+					}
+				}
+				& ~ label:after {
+					background-color: transparent;
+				}
+			}
+		}
+		&-right {
+			display: flex;
+			align-items: center;
+			grid-gap: 12px;
+			margin-left: auto;
+			max-width: 666px;
+			width: 100%;
+			@media screen and (max-width: 992px) {
+				max-width: 100%;
+			}
+			@media screen and (max-width: 768px) {
+				flex-wrap: wrap;
+			}
+			& label {
+				display: none;
+			}
+			& .filter__form-item {
+				@media screen and (max-width: 768px) {
+					width: 100%;
+					max-width: 100% !important;
+				}
+				&:first-child {
+					width: 100%;
+					max-width: 200px;
+					& #mySelect-author {
+						width: 100%;
+					}
+				}
+				&:nth-child(2) {
+					width: 100%;
+					max-width: 200px;
+					& #mySelect-author {
+						width: 100%;
+					}
+				}
+				&:nth-child(3) {
+					width: 100%;
+					max-width: 130px;
+					& #mySelect-author {
+						width: 100%;
+					}
+				}
+				&:last-child {
+					@media screen and (max-width: 992px) {
+						margin-left: auto;
+					}
+				}
+				
+			}
+		}
+		&-item {
+			& .btn {
+				margin-left: 12px;
+				border: none;
+				padding: 0;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: normal;
+				color: #706b66;
+				white-space: nowrap;
+			}
+		}
+	}
+	&__text {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: normal;
+		color: #706b66;
+		margin-bottom: 0;
+		@media screen and (max-width: 992px) {
+			display: flex;
+			flex-direction: column;
+			min-width: 84px;
+		}
+		& span:nth-child(2) {
+			@media screen and (max-width: 992px) {
+				display: none;
+			}
+		}
+	}
+}
+
+.select2-container {
+	z-index: 10 !important;
+}
