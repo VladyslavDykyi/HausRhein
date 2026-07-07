@@ -1,0 +1,20 @@
+.banner{
+	display: flex;
+	justify-content: center;
+	&-wrapper{
+		padding: 15px;
+		background-color: #d93838;
+		width: 100%;
+	}
+	& > p {
+		font-family: "Inter_18pt-SemiBold", sans-serif;
+		font-weight: 600;
+		font-size: 12px;
+		letter-spacing: 0.02em;
+		color: #fff;
+		margin-bottom: 0;
+		@media screen and (max-width: 768px) {
+			text-align: center;
+		}
+	}
+}

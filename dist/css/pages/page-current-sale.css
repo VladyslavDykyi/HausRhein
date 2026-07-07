@@ -2049,7 +2049,7 @@ select {
 }
 
 .placeBidModal .modal-body {
-  padding: 44px 52px 52px;
+  padding: 44px 24px 52px;
   position: relative;
 }
 
@@ -2065,14 +2065,14 @@ select {
 
 .placeBidModal .modal-body .form-login-item > *:first-child {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 55%;
-          flex: 1 1 55%;
+      -ms-flex: 1 1 170px;
+          flex: 1 1 170px;
 }
 
 .placeBidModal .modal-body .form-login-item > *:last-child {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 45%;
-          flex: 1 1 45%;
+      -ms-flex: 1 1 calc(100% - 182px);
+          flex: 1 1 calc(100% - 182px);
 }
 
 .placeBidModal .modal-body .form-login-item > .text-label {
@@ -2083,7 +2083,7 @@ select {
 }
 
 .placeBidModal .modal-body .form-login-item > .text-value {
-  font-size: 20px;
+  font-size: 16px;
   color: #0f0f0f;
   line-height: normal;
   margin-bottom: 0;
@@ -2633,9 +2633,11 @@ select {
   .registrationModal .modal-dialog.modal-xl {
     --bs-modal-width: 500px;
   }
+}
 
+@media (min-width: 676px) {
   .placeBidModal .modal-dialog.modal-lg {
-    --bs-modal-width: 400px;
+    --bs-modal-width: 550px;
   }
 
   .placeBidModal .modal-dialog.modal-xl {
@@ -2814,6 +2816,28 @@ select {
   .footer__nav-list {
     max-width: calc(33.3333% - 10px);
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .placeBidModal .modal-body .form-login-item > *:first-child {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 140px;
+            flex: 1 1 140px;
+  }
+
+  .placeBidModal .modal-body .form-login-item > *:last-child {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 calc(100% - 152px);
+            flex: 1 1 calc(100% - 152px);
+  }
+
+  .placeBidModal .modal-body .form-login-item > .text-label {
+    font-size: 14px;
+  }
+
+  .placeBidModal .modal-body .form-login-item > .text-value {
+    font-size: 14px;
   }
 }
 

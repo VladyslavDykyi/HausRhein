@@ -1,0 +1,54 @@
+@import "_default";
+@import "_header";
+@import "./page-auction-live/_page-auction-live-banner";
+@import "./page-auction-live/_page-auction-live-sidebarL";
+@import "./page-auction-live/_page-auction-live-slider";
+@import "./page-auction-live/_page-auction-live-sidebarR";
+@import "_footer";
+
+.container {
+	max-width: 1440px;
+}
+.live {
+	display: flex;
+	flex-wrap: wrap;
+	flex: 1 1 0;
+	& > .container {
+		height: calc(100% - 48px);
+		padding: 0;
+	}
+	&-wrapper {
+		display: flex;
+		flex-direction: column;
+		min-height: calc(100vh - 64px);
+	}
+	&-block {
+		display: flex;
+		align-self: stretch;
+		height: 100%;
+		@media screen and (max-width: 992px) {
+			flex-direction: column;
+		}
+		& .sidebarL {
+			flex: 5 5 22.22%;
+			@media screen and (max-width: 992px) {
+				order: 3;
+				padding-bottom: 30px;
+			}
+		}
+		
+		& .slider-wrapper {
+			flex: 6 6 48.61%;
+			@media screen and (max-width: 992px) {
+				order: 1;
+			}
+		}
+		
+		& .sidebarR {
+			flex: 5 5 29.17%;
+			@media screen and (max-width: 992px) {
+				order: 2;
+			}
+		}
+	}
+}

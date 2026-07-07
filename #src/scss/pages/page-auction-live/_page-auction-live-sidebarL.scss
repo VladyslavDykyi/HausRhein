@@ -1,0 +1,151 @@
+.sidebarL {
+	min-width: 300px;
+	&__header {
+		padding: 16px 20px;
+		background: #151412;
+		display: flex;
+		justify-content: space-between;
+		@media screen and (max-width: 1060px) {
+			padding: 8px 10px;
+		}
+		@media screen and (max-width: 992px) {
+			padding: 16px 20px;
+		}
+	}
+	&__title {
+		font-family: "Inter_18pt-Medium", sans-serif;
+		font-weight: 500;
+		font-size: 14px;
+		letter-spacing: 0.2em;
+		line-height: normal;
+		color: #c9a96e;
+		text-transform: uppercase;
+		margin-bottom: 0;
+	}
+	&__lots {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: normal;
+		color: #99948a;
+		margin-bottom: 0;
+	}
+	&__list {
+		padding-left: 0;
+		margin-bottom: 0;
+		background: #fff;
+		list-style: none;
+	}
+	&__item {
+		display: flex;
+		align-items: center;
+		border-bottom: 1px solid  #ede8e0;
+		&[data-hr-status="sold"] {
+			& .item__lot {
+				color: #706b66;
+			}
+			& .item__name {
+				color: #706b66;
+			}
+			& .item__label {
+				background: #d1ccc7;
+				color: #706b66;
+			}
+			& .item__price {
+				color: #706b66;
+			}
+		}
+		&[data-hr-status="current"] {
+			background: #faf2e0;
+			border-left: 3px solid #c9a96e;
+			& .item__lot {
+				color: #c9a96e;
+			}
+			& .item__name {
+				color: #151412;
+			}
+			& .item__label {
+				background: #c9a96e;
+				color: #151412;
+			}
+			& .item__price {
+				color: #151412;
+			}
+		}
+		&[data-hr-status="next"] {
+			& .item__label {
+				background: #2e8552;
+				color: #fff;
+			}
+		}
+		&[data-hr-status="upcoming"] {
+			& .item__label {
+				background: #2e8552;
+				color: #fff;
+			}
+		}
+		& .item__img {
+			padding: 12px;
+			@media screen and (max-width: 1060px) {
+				padding: 8px;
+			}
+			@media screen and (max-width: 992px) {
+				padding: 12px;
+			}
+			& img {
+				width: 70px;
+				height: 70px;
+				object-fit: contain;
+			}
+		}
+		& .item__info {
+			display: flex;
+			flex-wrap: wrap;
+			grid-gap: 8px;
+			align-items: baseline;
+			padding: 8px 12px 8px 0;
+			@media screen and (max-width: 1060px) {
+				padding: 8px;
+			}
+			@media screen and (max-width: 992px) {
+				padding: 8px 12px 8px 0;
+			}
+		}
+		& .item__lot {
+			width: 100%;
+			font-family: "Inter_18pt-Medium", sans-serif;
+			font-weight: 500;
+			font-size: 12px;
+			letter-spacing: 0.2em;
+			line-height: normal;
+			margin-bottom: 0;
+			color: #151412;
+		}
+		& .item__name {
+			width: 100%;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: normal;
+			margin-bottom: 0;
+			color: #151412;
+		}
+		& .item__label {
+			width: max-content;
+			background: #d1ccc7;
+			padding: 4px 6px;
+			font-family: "Inter_18pt-Medium", sans-serif;
+			font-weight: 500;
+			font-size: 12px;
+			letter-spacing: 0.2em;
+			line-height: normal;
+			margin-bottom: 0;
+			color: #151412;
+		}
+		& .item__price {
+			font-weight: 400;
+			font-size: 14px;
+			line-height: normal;
+			margin-bottom: 0;
+			color: #151412;
+		}
+	}
+}

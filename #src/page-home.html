@@ -37,7 +37,7 @@
 <script src="./js/lib/bootstrap.v5.3.3.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
-<script src="./js/pages/page-home.min.js" type="module"></script>
+<script src="./js/pages/page-auction-live.min.js" type="module"></script>
 <script>
 	<!-- код для відкривання модалки призавантаженні сторінки -->
 	// document.addEventListener('DOMContentLoaded', function () {
@@ -48,7 +48,7 @@
 	$(document).ready(function() {
 		$('.mySelect-increase').select2({
 			width: '100%',
-			dropdownParent: $('#placeBidModal')
+			dropdownParent: $('.placeBidModal '),
 		});
 	});
 </script>

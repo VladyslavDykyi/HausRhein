@@ -260,9 +260,9 @@
 }
 .placeBidModal {
 	& .modal-dialog {
-		@media (min-width: 576px) {
+		@media (min-width: 676px) {
 			&.modal-lg  {
-				--bs-modal-width: 400px;
+				--bs-modal-width: 550px;
 			}
 			&.modal-xl {
 				--bs-modal-width: 500px;
@@ -270,7 +270,7 @@
 		}
 	}
 	& .modal-body {
-		padding: 44px 52px 52px;
+		padding: 44px 24px 52px;
 		position: relative;
 		@media screen and (max-width: 430px) {
 			padding: 22px;
@@ -280,22 +280,34 @@
 			align-items: center;
 			grid-gap: 12px;
 			& >*:first-child {
-				flex: 1 1 55%;
+				flex: 1 1 170px;
+				@media screen and (max-width: 580px) {
+					flex: 1 1 140px;
+				}
 			}
 			& >*:last-child {
-				flex: 1 1 45%;
+				flex: 1 1 calc(100% - 182px);
+				@media screen and (max-width: 580px) {
+					flex: 1 1 calc(100% - 152px);
+				}
 			}
 			& > .text-label  {
 				font-size: 16px;
 				color: #0f0f0f;
 				line-height: normal;
 				margin-bottom: 0;
+				@media screen and (max-width: 580px) {
+					font-size: 14px;
+				}
 			}
 			& > .text-value  {
-				font-size: 20px;
+				font-size: 16px;
 				color: #0f0f0f;
 				line-height: normal;
 				margin-bottom: 0;
+				@media screen and (max-width: 580px) {
+					font-size: 14px;
+				}
 			}
 			& > .text {
 				font-size: 14px;
