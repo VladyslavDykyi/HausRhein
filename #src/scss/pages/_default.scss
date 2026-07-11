@@ -48,3 +48,9 @@ select {
 	border-radius: 4px;
 	width: 100%;
 }
+
+.disabled {
+	opacity: .6;
+	cursor: auto;
+	pointer-events: none;
+}

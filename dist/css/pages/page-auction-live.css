@@ -54,6 +54,12 @@ select {
   width: 100%;
 }
 
+.disabled {
+  opacity: .6;
+  cursor: auto;
+  pointer-events: none;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;

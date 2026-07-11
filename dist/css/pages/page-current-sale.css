@@ -54,6 +54,12 @@ select {
   width: 100%;
 }
 
+.disabled {
+  opacity: .6;
+  cursor: auto;
+  pointer-events: none;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2838,6 +2844,24 @@ select {
 
   .placeBidModal .modal-body .form-login-item > .text-value {
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .pagination .page-item:first-child a {
+    width: 48px;
+  }
+
+  .pagination .page-item:first-child a > span {
+    display: none;
+  }
+
+  .pagination .page-item:last-child a {
+    width: 48px;
+  }
+
+  .pagination .page-item:last-child a > span {
+    display: none;
   }
 }
 
