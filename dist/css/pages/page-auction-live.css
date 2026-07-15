@@ -871,31 +871,6 @@ select {
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32' fill='none'%3e%3cpath d='M10.68 22.716L9.816 21.852L15.064 16.572L9.816 11.292L10.68 10.428L15.928 15.708L21.144 10.428L22.008 11.292L16.76 16.572L22.008 21.852L21.144 22.716L15.928 17.468L10.68 22.716Z' fill='%23B8B3AB'/%3e%3c/svg%3e");
 }
 
-.banner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.banner-wrapper {
-  padding: 8px 0;
-  background-color: #d93838;
-  width: 100%;
-}
-
-.banner > p {
-  font-family: "Inter_18pt-SemiBold", sans-serif;
-  font-weight: 600;
-  font-size: 12px;
-  letter-spacing: 0.02em;
-  line-height: normal;
-  color: #fff;
-  margin-bottom: 0;
-}
-
 .sidebarL {
   min-width: 300px;
   position: relative;
@@ -990,7 +965,7 @@ select {
   margin-bottom: 0;
   background: #fff;
   list-style: none;
-  max-height: calc(100vh - 144px);
+  max-height: calc(100vh - 119px);
   overflow: auto;
 }
 
@@ -1135,7 +1110,7 @@ select {
 .slider-wrapper {
   background: #faf7f2;
   padding: 40px 50px 24px;
-  max-height: calc(100vh - 95px);
+  max-height: calc(100vh - 70px);
   overflow: auto;
   scrollbar-gutter: stable;
 }
@@ -1498,7 +1473,7 @@ select {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 10px;
-  max-height: calc(100vh - 424px);
+  max-height: calc(100vh - 400px);
   overflow: auto;
 }
 
@@ -1843,7 +1818,7 @@ select {
 }
 
 .live > .container {
-  height: calc(100% - 95px);
+  height: calc(100% - 70px);
   padding: 0;
 }
 
@@ -1855,6 +1830,7 @@ select {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  border-top: 6px solid #e02e2e;
   min-height: calc(100vh - 64px);
 }
 
@@ -2071,10 +2047,6 @@ select {
 
   .mobil-menu .offcanvas-footer.btn-register-log .btn-dark {
     display: block;
-  }
-
-  .banner > p {
-    text-align: center;
   }
 
   .footer__wrapper {

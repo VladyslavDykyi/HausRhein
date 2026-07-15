@@ -1,6 +1,5 @@
 @import "_default";
 @import "_header";
-@import "./page-auction-live/_page-auction-live-banner";
 @import "./page-auction-live/_page-auction-live-sidebarL";
 @import "./page-auction-live/_page-auction-live-slider";
 @import "./page-auction-live/_page-auction-live-sidebarR";
@@ -13,12 +12,13 @@
 	display: flex;
 	flex-wrap: wrap;
 	& > .container {
-		height: calc(100% - 95px);
+		height: calc(100% - 70px);
 		padding: 0;
 	}
 	&-wrapper {
 		display: flex;
 		flex-direction: column;
+		border-top: 6px solid #e02e2e;
 		min-height: calc(100vh - 64px);
 	}
 	&-block {
