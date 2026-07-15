@@ -2,6 +2,19 @@
 	&-wrapper {
 		background: #faf7f2;
 		padding: 40px 50px 24px;
+		max-height: calc(100vh - 95px);
+		overflow: auto;
+		scrollbar-gutter: stable;
+		&::-webkit-scrollbar {
+			border-radius: 3px;
+			width: 7px;
+			height: 8px;
+		}
+		&::-webkit-scrollbar-thumb {
+			border-radius: 13px;
+			width: 4px;
+			background-color: #c9a96e;
+		}
 		@media screen and (max-width: 1320px) {
 			padding: 20px;
 		}

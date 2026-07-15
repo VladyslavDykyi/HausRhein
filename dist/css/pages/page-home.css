@@ -1465,6 +1465,44 @@ select {
           box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.07);
   background: #fff;
   border-radius: 2px;
+  position: relative;
+}
+
+.current-auction__item .label-live {
+  position: absolute;
+  top: 17px;
+  right: 28px;
+  z-index: 10;
+  border-radius: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 62px;
+  height: 20px;
+  padding: 0 10px 0 20px;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  color: #fff;
+  background: rgba(191, 46, 46, 0.9);
+}
+
+.current-auction__item .label-live:before {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  content: '';
+  display: block;
+  border-radius: 100%;
+  background-color: #fff;
+  width: 6px;
+  height: 6px;
 }
 
 .current-auction__item .carousel-inner {
@@ -3256,14 +3294,14 @@ select {
 
 .placeBidModal .modal-body .form-login-item > *:first-child {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 170px;
-          flex: 1 1 170px;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
 }
 
 .placeBidModal .modal-body .form-login-item > *:last-child {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 calc(100% - 182px);
-          flex: 1 1 calc(100% - 182px);
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
 }
 
 .placeBidModal .modal-body .form-login-item > .text-label {
@@ -4191,18 +4229,6 @@ select {
     font-size: 32px;
   }
 
-  .placeBidModal .modal-body .form-login-item > *:first-child {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 140px;
-            flex: 1 1 140px;
-  }
-
-  .placeBidModal .modal-body .form-login-item > *:last-child {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 calc(100% - 152px);
-            flex: 1 1 calc(100% - 152px);
-  }
-
   .placeBidModal .modal-body .form-login-item > .text-label {
     font-size: 14px;
   }
@@ -4304,7 +4330,7 @@ select {
   }
 
   .placeBidModal .modal-body {
-    padding: 22px;
+    padding: 14px;
   }
 }
 

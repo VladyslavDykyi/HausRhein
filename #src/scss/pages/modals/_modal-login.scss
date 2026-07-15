@@ -273,23 +273,17 @@
 		padding: 44px 24px 52px;
 		position: relative;
 		@media screen and (max-width: 430px) {
-			padding: 22px;
+			padding: 14px;
 		}
 		& .form-login-item {
 			display: flex;
 			align-items: center;
 			grid-gap: 12px;
 			& >*:first-child {
-				flex: 1 1 170px;
-				@media screen and (max-width: 580px) {
-					flex: 1 1 140px;
-				}
+				flex: 1 1 50%;
 			}
 			& >*:last-child {
-				flex: 1 1 calc(100% - 182px);
-				@media screen and (max-width: 580px) {
-					flex: 1 1 calc(100% - 152px);
-				}
+				flex: 1 1 50%;
 			}
 			& > .text-label  {
 				font-size: 16px;

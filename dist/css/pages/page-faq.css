@@ -1464,14 +1464,14 @@ select {
 
 .placeBidModal .modal-body .form-login-item > *:first-child {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 170px;
-          flex: 1 1 170px;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
 }
 
 .placeBidModal .modal-body .form-login-item > *:last-child {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 calc(100% - 182px);
-          flex: 1 1 calc(100% - 182px);
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
 }
 
 .placeBidModal .modal-body .form-login-item > .text-label {
@@ -2062,18 +2062,6 @@ body {
 }
 
 @media screen and (max-width: 580px) {
-  .placeBidModal .modal-body .form-login-item > *:first-child {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 140px;
-            flex: 1 1 140px;
-  }
-
-  .placeBidModal .modal-body .form-login-item > *:last-child {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 calc(100% - 152px);
-            flex: 1 1 calc(100% - 152px);
-  }
-
   .placeBidModal .modal-body .form-login-item > .text-label {
     font-size: 14px;
   }
@@ -2099,7 +2087,7 @@ body {
   }
 
   .placeBidModal .modal-body {
-    padding: 22px;
+    padding: 14px;
   }
 }
 
