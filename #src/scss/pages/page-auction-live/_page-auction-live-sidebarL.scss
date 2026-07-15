@@ -2,7 +2,7 @@
 	min-width: 300px;
 	position: relative;
 	& .btn-wrapper {
-		position: sticky;
+		position: absolute;
 		bottom: 28px;
 		left: 0;
 		z-index: 100;

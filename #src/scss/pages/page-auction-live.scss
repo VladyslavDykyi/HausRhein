@@ -12,9 +12,8 @@
 .live {
 	display: flex;
 	flex-wrap: wrap;
-	flex: 1 1 0;
 	& > .container {
-		height: calc(100% - 31px);
+		height: calc(100% - 95px);
 		padding: 0;
 	}
 	&-wrapper {

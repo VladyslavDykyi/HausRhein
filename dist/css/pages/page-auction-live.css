@@ -902,8 +902,7 @@ select {
 }
 
 .sidebarL .btn-wrapper {
-  position: -webkit-sticky;
-  position: sticky;
+  position: absolute;
   bottom: 28px;
   left: 0;
   z-index: 100;
@@ -1841,13 +1840,10 @@ select {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 0px;
-          flex: 1 1 0;
 }
 
 .live > .container {
-  height: calc(100% - 31px);
+  height: calc(100% - 95px);
   padding: 0;
 }
 
