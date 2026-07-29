@@ -1058,10 +1058,6 @@ textarea {
   height: 100%;
 }
 
-.info {
-  margin-top: 16px;
-}
-
 .info__author {
   font-family: 'Inter_18pt-Medium', sans-serif;
   font-weight: 500;
@@ -2955,7 +2951,7 @@ textarea {
 }
 
 .slider-info-wrapper {
-  padding: 56px 0;
+  padding: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
