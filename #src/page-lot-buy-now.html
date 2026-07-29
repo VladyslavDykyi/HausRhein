@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Page-lot-buy-now</title>
+	<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="./css/default/style.min.css">
+	<link rel="stylesheet" href="./css/lib/bootstrap.v5.3.3.min.css">
+	<link rel="stylesheet" href="./css/lib/select2.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./css/pages/page-lot-buy-now.min.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+@@include('./html/_header.html')
+<main class="wrapper">
+	@@include('./html/page-lot-buy-now/_page-lot-buy-now.html')
+</main>
+@@include('./html/_footer.html')
+<!-- початок цей блок ще в розробці _modal	-->
+@@include('./html/_modal.html')
+<!-- кінець цей блок ще в розробці _modal	-->
+<script src="./js/lib/popper.v2.11.8.min.js"></script>
+<script src="./js/lib/jquery.v3.7.1.min.js"></script>
+<script src="./js/lib/select2.min.js"></script>
+<script src="./js/lib/bootstrap.v5.3.3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<script src="./js/pages/page-lot-buy-now.min.js" type="module"></script>
+<script>
+	$(document).ready(function() {
+		$('#bid_amount').select2({
+			width: '100%',
+			minimumResultsForSearch: 0,
+		});
+		$('.mySelect-increase').select2({
+			width: '100%',
+			dropdownParent: $('.placeBidModal '),
+		});
+	});
+</script>
+</body>
+</html>

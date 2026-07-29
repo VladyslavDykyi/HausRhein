@@ -1,0 +1,23 @@
+.breadcrumb {
+	margin-bottom: 0;
+	padding: 16px 0;
+	&-item {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: normal;
+		color: #8c8782;
+		& > a {
+			color: #8c8782;
+			text-decoration: none;
+			&:hover {
+				color: #c9a96e;
+			}
+		}
+		&:before {
+			color: #8c8782 !important;
+		}
+		&.active {
+			color: #c9a96e;
+		}
+	}
+}

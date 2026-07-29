@@ -60,6 +60,15 @@ select {
   pointer-events: none;
 }
 
+a,
+button,
+input,
+select,
+textarea {
+  -webkit-transition: all .1s linear;
+  transition: all .1s linear;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;

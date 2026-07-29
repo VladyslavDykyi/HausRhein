@@ -1,0 +1,53 @@
+@import "_default";
+@import "_header";
+@import "_breadcrumbs";
+@import "_timer";
+@import "./page-lot-buy-now/_page-lot-buy-now-slider.scss";
+@import "./page-lot-buy-now/_page-lot-buy-now-info.scss";
+@import "./page-lot-buy-now/_page-lot-buy-now-tab.scss";
+@import "./page-lot-buy-now/_page-lot-buy-now-list.scss";
+@import "_footer";
+@import "./modals/_modal-login";
+@import "../default/_select2.scss";
+
+.page-lot-buy-now {
+	&-bg {
+		background-color: #fff;
+	}
+	&-list {
+		background-color: #faf7f2;
+		padding: 60px 0;
+	}
+}
+
+.current-sale {
+	background-color: #faf7f2;
+}
+
+.slider-info-wrapper {
+	padding: 56px 0;
+	display: flex;
+	grid-gap: 32px;
+	@media screen and (max-width: 992px) {
+		grid-gap: 32px;
+		flex-direction: column;
+		padding: 36px 0;
+	}
+	@media screen and (max-width: 768px) {
+		padding: 24px 0;
+	}
+	& .sliders {
+		max-width: 45%;
+		width: 100%;
+		@media screen and (max-width: 992px) {
+			max-width: 100%;
+		}
+	}
+	& .info {
+		max-width: 55%;
+		width: 100%;
+		@media screen and (max-width: 992px) {
+			max-width: 100%;
+		}
+	}
+}

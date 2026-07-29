@@ -60,6 +60,15 @@ select {
   pointer-events: none;
 }
 
+a,
+button,
+input,
+select,
+textarea {
+  -webkit-transition: all .1s linear;
+  transition: all .1s linear;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1831,7 +1840,7 @@ select {
       -ms-flex-direction: column;
           flex-direction: column;
   border-top: 6px solid #e02e2e;
-  min-height: calc(100vh - 64px);
+  min-height: calc(100vh - 164px);
 }
 
 .live-block {

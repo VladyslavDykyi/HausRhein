@@ -60,6 +60,15 @@ select {
   pointer-events: none;
 }
 
+a,
+button,
+input,
+select,
+textarea {
+  -webkit-transition: all .1s linear;
+  transition: all .1s linear;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2314,7 +2323,7 @@ select {
 }
 
 .select2-container {
-  z-index: 9999;
+  z-index: 100;
 }
 
 .select2-search__field {

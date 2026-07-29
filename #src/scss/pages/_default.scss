@@ -54,3 +54,10 @@ select {
 	cursor: auto;
 	pointer-events: none;
 }
+a,
+button,
+input,
+select,
+textarea {
+	transition: all .1s linear;
+}

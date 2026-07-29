@@ -1,0 +1,231 @@
+.buy-now {
+	max-width: 1280px;
+	&-bg {
+		background: #faf7f2;
+	}
+	&-title {
+		font-family: 'CormorantGaramond-Medium', serif;
+		font-weight: 500;
+		font-size: 36px;
+		line-height: 122%;
+		color: #0f0f0f;
+		margin-bottom: 28px;
+	}
+	&__list {
+		list-style: none;
+		padding-left: 0;
+		margin-bottom: 0;
+		display: flex;
+		flex-wrap: wrap;
+		grid-gap: 32px;
+		justify-content: space-between;
+		@media screen and (max-width: 992px) {
+			grid-gap: 16px;
+		}
+	}
+	&__item {
+		max-width: calc(25% - 24px);
+		width: 100%;
+		box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.07);
+		background: #fff;
+		border-radius: 2px;
+		position: relative;
+		@media screen and (max-width: 992px) {
+			max-width: calc(50% - 8px);
+		}
+		@media screen and (max-width: 520px) {
+			max-width: 100%;
+		}
+		& .carousel-inner {
+			max-height: 320px;
+			& a {
+				position: relative;
+				background: #1F1C1A;
+				& span {
+					font-family: 'Inter_18pt-Medium', sans-serif;
+					font-weight: 500;
+					font-size: 9px;
+					line-height: normal;
+					letter-spacing: 0.2em;
+					color: #fff;
+					padding: 5px 10px;
+					text-transform: uppercase;
+					background: rgba(15, 15, 15, 0.72);
+					display: block;
+					position: absolute;
+					top: 14px;
+					left: 14px;
+				}
+			}
+			& img {
+				width: 100%;
+				height: 320px;
+				object-fit: contain;
+				background: #1F1C1A;
+				border-radius: 2px 2px 0 0;
+			}
+		}
+	}
+	&__card {
+		display: flex;
+		flex-direction: column;
+		&-slider {
+			& .carousel-control-prev {
+				opacity: 1;
+				&-icon {
+					background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3crect x='0.3' y='0.3' width='23.4' height='23.4' rx='11.7' fill='%23292624' /%3e%3crect x='0.3' y='0.3' width='23.4' height='23.4' rx='11.7' stroke='%2347423B' stroke-width='0.6' /%3e%3cpath d='M11.5465 15.0545L8.49199 12L11.5465 8.94543L12.0715 9.46362L9.91017 11.625H15.5079V12.375H9.91017L12.0715 14.5295L11.5465 15.0545Z' fill='%23807870' /%3e%3c/svg%3e");
+					&:hover {
+						background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3crect x='0.3' y='0.3' width='23.4' height='23.4' rx='11.7' fill='%23C9A96E' /%3e%3crect x='0.3' y='0.3' width='23.4' height='23.4' rx='11.7' stroke='%2347423B' stroke-width='0.6' /%3e%3cpath d='M11.5465 15.0545L8.49199 12L11.5465 8.94543L12.0715 9.46362L9.91017 11.625H15.5079V12.375H9.91017L12.0715 14.5295L11.5465 15.0545Z' fill='%231C1C1C' /%3e%3c/svg%3e");
+					}
+				}
+			}
+			& .carousel-control-next {
+				opacity: 1;
+				&-icon {
+					background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3crect x='0.3' y='0.3' width='23.4' height='23.4' rx='11.7' fill='%23292624' /%3e%3crect x='0.3' y='0.3' width='23.4' height='23.4' rx='11.7' stroke='%2347423B' stroke-width='0.6' /%3e%3cpath d='M12.4534 15.0545L11.9284 14.5363L14.0897 12.375H8.492V11.625H14.0897L11.9284 9.47043L12.4534 8.94543L15.5079 12L12.4534 15.0545Z' fill='%23807870' /%3e%3c/svg%3e");
+					&:hover {
+						background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3crect x='0.3' y='0.3' width='23.4' height='23.4' rx='11.7' fill='%23C9A96E' /%3e%3crect x='0.3' y='0.3' width='23.4' height='23.4' rx='11.7' stroke='%2347423B' stroke-width='0.6' /%3e%3cpath d='M12.4534 15.0545L11.9284 14.5363L14.0897 12.375H8.492V11.625H14.0897L11.9284 9.47043L12.4534 8.94543L15.5079 12L12.4534 15.0545Z' fill='%231C1C1C' /%3e%3c/svg%3e");
+					}
+				}
+			}
+		}
+		&-info {
+			flex: 1 0;
+			display: flex;
+			flex-direction: column;
+			&-wrapper {
+				flex: 1 0;
+				height: 100%;
+				padding: 10px 20px 10px;
+				display: flex;
+				flex-direction: column;
+			}
+		}
+		&-header {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			margin-bottom: 0;
+		}
+		&-title {
+			flex: 1 0;
+			margin-bottom: 0;
+			& > a {
+				font-family: 'CormorantGaramond-SemiBold', serif;
+				font-weight: 600;
+				font-size: 22px;
+				line-height: 138%;
+				color: #0f0f0f;
+				text-decoration: none;
+				display: -webkit-box;
+				-webkit-line-clamp: 2;
+				-webkit-box-orient: vertical;
+				overflow: hidden;
+			}
+		}
+		&-price {
+			font-family: 'EBGaramond-Medium', serif;
+			font-weight: 500;
+			font-size: 22px;
+			line-height: 143%;
+			color: #0f0f0f;
+			margin-bottom: 0;
+			text-transform: uppercase;
+			& span {
+				font-family: 'EBGaramond-Medium', serif;
+				font-weight: 500;
+				font-size: 18px;
+				color: #0f0f0f;
+				text-transform: uppercase;
+			}
+			&-wrapper {
+				display: flex;
+				align-items: baseline;
+				justify-content: space-between;
+			}
+			&-text {
+				font-weight: 400;
+				font-size: 16px;
+				line-height: normal;
+				color: #6b665e;
+				margin-bottom: 0;
+			}
+		}
+		&-auction {
+			
+			font-family: 'Inter_18pt-Medium', sans-serif;
+			font-weight: 500;
+			font-size: 11px;
+			line-height: normal;
+			letter-spacing: 0.15em;
+			color: #706b66;
+			margin-bottom: 0;
+			&-wrapper {
+				border-top: 1px solid #e0dbd6;
+				padding-top: 8px;
+				margin-top: 8px;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
+		}
+		&-like {
+			font-weight: 400;
+			line-height: normal;
+			font-size: 14px;
+			color: #706b66;
+			display: flex;
+			align-items: center;
+			grid-gap: 4px;
+			border: none;
+			padding: 0;
+			background: transparent;
+			&.liked {
+				& path {
+					fill: #706b66;
+					stroke: #706b66;
+				}
+				& span {
+					color: #706b66;
+				}
+			}
+		}
+		&-buy {
+			padding: 0 20px 10px;
+		}
+		&-btn {
+			position: relative;
+			border-radius: 3px;
+			padding: 11px 0;
+			width: 100%;
+			background: #c9a96e;
+			border: none;
+			font-family: 'Inter_18pt-SemiBold', sans-serif;
+			font-weight: 600;
+			font-size: 16px;
+			letter-spacing: 0.05em;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: #151412;
+			text-align: center;
+			outline: none;
+			
+			&:hover {
+				background: #b8965c;
+				color: #0f0f0f;
+			}
+			
+			&:active {
+				background: #b8965c;
+				color: #0f0f0f;
+				
+			}
+			
+			&:disabled {
+				background: #dec79e;
+				opacity: 0.6;
+			}
+		}
+	}
+}

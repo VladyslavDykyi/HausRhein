@@ -1,0 +1,144 @@
+.info {
+	margin-top: 16px;
+	&__lot {
+		font-family: 'Inter_18pt-Medium', sans-serif;
+		font-weight: 500;
+		font-size: 12px;
+		letter-spacing: 0.15em;
+		line-height: normal;
+		margin-bottom: 8px;
+		color: #706b66;
+		text-transform: uppercase;
+	}
+	&__author {
+		font-family: 'Inter_18pt-Medium', sans-serif;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: normal;
+		margin-bottom: 8px;
+		letter-spacing: 0.05em;
+		color: #c9a96e;
+	}
+	&__name {
+		font-weight: 400;
+		font-size: 32px;
+		line-height: 125%;
+		margin-bottom: 24px;
+		color: #0f0f0f;
+	}
+	&__prises {
+		border-top: 1px solid #e0dbd6;
+		padding-top: 24px;
+		display: flex;
+		margin-bottom: 24px;
+		@media screen and (max-width: 768px) {
+			flex-direction: column;
+		}
+	}
+	&__left {
+		border-right: 1px solid #e0dbd6;
+		padding-right: 48px;
+		margin-right: 48px;
+		@media screen and (max-width: 1200px) {
+			padding-right: 24px;
+			margin-right: 24px;
+		}
+		@media screen and (max-width: 992px) {
+			padding-right: 12px;
+			margin-right: 12px;
+		}
+		@media screen and (max-width: 768px) {
+			border-bottom: 1px solid #e0dbd6;
+			border-right: none;
+			padding-right: 0;
+			margin-right: 0;
+			padding-bottom: 24px;
+			margin-bottom: 24px;
+		}
+	}
+	&__right {}
+	&__estimate {
+		font-family: 'Inter_18pt-SemiBold', sans-serif;
+		font-weight: 600;
+		font-size: 14px;
+		letter-spacing: 0.2em;
+		line-height: normal;
+		margin-bottom: 6px;
+		color: #706b66;
+	}
+	&__prise-min {
+		font-weight: 400;
+		font-size: 22px;
+		line-height: 127%;
+		margin-bottom: 6px;
+		color: #0f0f0f;
+	}
+	&__prise-max {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: normal;
+		margin-bottom: 0;
+		color: #706b66;
+	}
+	&__bid {
+		font-family: 'Inter_18pt-SemiBold', sans-serif;
+		font-weight: 600;
+		font-size: 14px;
+		letter-spacing: 0.2em;
+		line-height: normal;
+		margin-bottom: 6px;
+		color: #706b66;
+	}
+	&__current {
+		font-family: 'Inter_18pt-SemiBold', sans-serif;
+		font-weight: 600;
+		font-size: 22px;
+		line-height: 127%;
+		margin-bottom: 6px;
+		color: #0f0f0f;
+	}
+	&__bids {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: normal;
+		margin-bottom: 0;
+		color: #706b66;
+		position: relative;
+		&.live {
+			padding-left: 16px;
+			&:before {
+				content: '';
+				width: 8px;
+				height: 8px;
+				background-color: #BF2E2E;
+				border-radius: 50%;
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 50%;
+				transform: translateY(-50%);
+				
+			}
+		}
+	}
+	&__form {}
+	&__label {
+		display: block;
+	}
+	&__select {}
+	&__btn {
+		margin: 24px 0 0;
+		& .btn.btn-primary {
+			font-family: 'Inter_18pt-SemiBold', sans-serif;
+			font-weight: 600;
+			font-size: 18px;
+			letter-spacing: 0.1em;
+			color: #fff;
+			background: #0f0f0f;
+			border-radius: 3px;
+			padding: 16px 32px;
+			width: 100%;
+			border: none;
+		}
+	}
+}
