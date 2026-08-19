@@ -1,0 +1,149 @@
+<div class="profile__main-wrapper">
+	<section class="profile__section">
+		<div class="profile__section-header">
+			<h2 class="profile__section-title">
+				PERSONAL INFORMATION
+			</h2>
+			<button class="profile__section-btn" type="submit" form="user-info">
+				SAVE
+			</button>
+		</div>
+		<form class="profile__section-form" action="#" id="user-info">
+			<div class="profile__section-item">
+<!--				підсвітка помилки з'являється по додавання класу error  -->
+				<label class="input-my2 error" for="first_name">
+					<span class="input-my2__wrapper">
+						<span class="input-my2__text-label">
+							FIRST NAME
+						</span>
+						<input type="text" id="first_name" name="first_name" required placeholder="Enter first name">
+					</span>
+					<span class="input-my2__error">⚠ This field is required</span>
+				</label>
+			</div>
+			<div class="profile__section-item">
+				<label class="input-my2" for="last_name">
+					<span class="input-my2__wrapper">
+						<span class="input-my2__text-label">
+							LAST NAME
+						</span>
+						<input type="text" id="last_name" name="last_name" required placeholder="Enter last name">
+					</span>
+					<span class="input-my2__error">⚠ This field is required</span>
+				</label>
+			</div>
+			<div class="profile__section-item">
+				<label class="input-my2" for="email_address">
+					<span class="input-my2__wrapper">
+						<span class="input-my2__text-label">
+							EMAIL ADDRESS
+						</span>
+						<input type="text" id="email_address" name="email_address" required placeholder="Enter email address">
+					</span>
+					<span class="input-my2__error">⚠ This field is required</span>
+				</label>
+			</div>
+			<div class="profile__section-item">
+				<label class="input-my2" for="phone_number">
+					<span class="input-my2__wrapper">
+						<span class="input-my2__text-label">
+							PHONE NUMBER
+						</span>
+						<input type="text" id="phone_number" name="phone_number" required placeholder="Enter phone number">
+					</span>
+					<span class="input-my2__error">⚠ This field is required</span>
+				</label>
+			</div>
+		</form>
+	</section>
+	<section class="profile__section" data-delivery>
+		<div class="profile__section-header">
+			<h2 class="profile__section-title">
+				SHIPPING & BILLING ADDRESS
+			</h2>
+			<button class="profile__section-btn" type="submit" form="user-info-delivery">
+				SAVE
+			</button>
+		</div>
+		<form class="profile__section-form v3" action="#" id="user-info-delivery">
+			<div class="profile__section-item">
+				<label class="input-my2__text-label" for="mySelect-country">
+					COUNTRY
+				</label>
+				<select class="mySelect-increase" id="mySelect-country" name="mySelect-country">
+					<option value="value1">Switzerland</option>
+					<option value="value2">Ukraine</option>
+					<option value="value2">Poland</option>
+					<option value="value2">USA</option>
+					<option value="value2">Denmark</option>
+				</select>
+			</div>
+			<div class="profile__section-item">
+				<label class="input-my2" for="region_canton">
+					<span class="input-my2__wrapper">
+						<span class="input-my2__text-label">
+							REGION / CANTON
+						</span>
+						<input type="text" id="region_canton" name="region_canton" required placeholder="Enter region / canton">
+					</span>
+					<span class="input-my2__error">⚠ This field is required</span>
+				</label>
+			</div>
+			<div class="profile__section-item">
+				<label class="input-my2" for="city">
+					<span class="input-my2__wrapper">
+						<span class="input-my2__text-label">
+							CITY
+						</span>
+						<input type="text" id="city" name="city" required placeholder="Enter city">
+					</span>
+					<span class="input-my2__error">⚠ This field is required</span>
+				</label>
+			</div>
+			<div class="profile__section-item">
+				<label class="input-my2" for="postal_code">
+					<span class="input-my2__wrapper">
+						<span class="input-my2__text-label">
+							POSTAL CODE
+						</span>
+						<input type="text" id="postal_code" name="postal_code" required placeholder="Enter postal code">
+					</span>
+					<span class="input-my2__error">⚠ This field is required</span>
+				</label>
+			</div>
+			<div class="profile__section-item">
+				<label class="input-my2" for="street_address">
+					<span class="input-my2__wrapper">
+						<span class="input-my2__text-label">
+							STREET ADDRESS
+						</span>
+						<input type="text" id="street_address" name="street_address" required placeholder="Enter street address">
+					</span>
+					<span class="input-my2__error">⚠ This field is required</span>
+				</label>
+			</div>
+			<div class="profile__section-item">
+				<label class="input-my2" for="apt_suite">
+					<span class="input-my2__wrapper">
+						<span class="input-my2__text-label">
+							APT / SUITE
+						</span>
+						<input type="text" id="apt_suite" name="apt_suite" required placeholder="Enter apt suite">
+					</span>
+					<span class="input-my2__error">⚠ This field is required</span>
+				</label>
+			</div>
+			<div class="profile__section-item">
+				<label class="checkbox-my" for="confirmRegistrationModal">
+					<input type="checkbox" id="confirmRegistrationModal" name="confirmRegistrationModal">
+					<span>
+						Billing address is the same as shipping address
+					</span>
+				</label>
+				<div class="invalid-feedback">
+					You must agree before submitting.
+				</div>
+			</div>
+		</form>
+	</section>
+</div>

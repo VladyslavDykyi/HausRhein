@@ -1,0 +1,205 @@
+.profile {
+	&__header-bg {
+		background: #fff;
+	}
+	&__main {
+		display: flex;
+		grid-gap: 32px;
+		@media screen and (max-width: 768px) {
+			flex-direction: column;
+		}
+		&-bg {
+			background: #faf7f2;
+			padding: 48px 0;
+			@media screen and (max-width: 768px) {
+				padding: 24px 0;
+			}
+		}
+		&-wrapper {
+			display: flex;
+			flex-direction: column;
+			grid-gap: 24px;
+		}
+	}
+	&__section {
+		border-radius: 4px;
+		box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.06);
+		background: #fff;
+		padding: 24px 0 32px;
+		@media screen and (max-width: 992px) {
+			padding: 12px 0 16px;
+		}
+		&[data-delivery] {
+			& .profile__section-item:first-child {
+				padding: 6px 8px;
+				& select {
+					padding: 4px 0;
+					font-weight: 400;
+					font-size: 16px;
+					line-height: 154%;
+					color: #0f0f0f;
+					border: none;
+					outline: none;
+					border-bottom: 1px solid #e0dbd6;
+					width: 100%;
+					background-color: transparent;
+				}
+				& .select2-container--default .select2-selection--single {
+					background-color: #fff;
+					border-color: transparent;
+					border-bottom: 1px solid #e0dbd6;
+					padding: 10px 14px 10px 0;
+					height: 42px;
+					border-radius: 0;
+				}
+			}
+		}
+		&-header {
+			border-bottom: 1px solid #d7d3cd;
+			padding: 0 40px 20px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			@media screen and (max-width: 992px) {
+				padding: 0 24px 12px;
+			}
+		}
+		&-title {
+			font-weight: 600;
+			font-size: 14px;
+			line-height: normal;
+			letter-spacing: 0.25em;
+			color: #0f0f0f;
+			margin-bottom: 0;
+		}
+		&-btn {
+			text-transform: uppercase;
+			padding: 0;
+			border: none;
+			outline: none;
+			background-color: transparent;
+			font-weight: 500;
+			font-size: 11px;
+			line-height: normal;
+			letter-spacing: 0.05em;
+			color: #c9a96e;
+		}
+		&-form {
+			padding: 24px 32px 0;
+			display: flex;
+			flex-wrap: wrap;
+			grid-gap: 24px;
+			@media screen and (max-width: 992px) {
+				padding: 12px 16px 0;
+			}
+			&.v3 {
+				& > .profile__section-item {
+					width: calc(33.33333% - 16px);
+					@media screen and (max-width: 992px) {
+						width: calc(50% - 12px);
+					}
+					@media screen and (max-width: 580px) {
+						width: 100%;
+					}
+					&:last-child {
+						width: 100%;
+						padding-left: 8px;
+					}
+				}
+			}
+		}
+		&-item {
+			width: calc(50% - 12px);
+			@media screen and (max-width: 580px) {
+				width: 100%;
+			}
+			& .checkbox-my {
+				position: relative;
+				padding-left: 28px;
+				& input {
+					display: none;
+				}
+				& span {
+					font-weight: 400;
+					font-size: 14px;
+					color: #8e8881;
+					& a {
+						font-weight: 400;
+						font-size: 14px;
+						color: #8e8881;
+					}
+				}
+				& input:checked + span {
+					&:after {
+						background-color: #c9a96e;
+						border: 1px solid transparent;
+					}
+					&:before {
+						content: "";
+						position: absolute;
+						z-index: 1;
+						top: 50%;
+						transform: translateY(-50%)rotate(-45deg);
+						left: 5px;
+						width: 9px;
+						height: 5px;
+						border-left: 2px solid #1c1c1c;
+						border-bottom: 2px solid #1c1c1c;
+					}
+				}
+				& span:after {
+					content: "";
+					display: block;
+					border: 1px solid #999187;
+					border-radius: 5px;
+					width: 18px;
+					height: 18px;
+					background: #fff;
+					position: absolute;
+					left: 0;
+					top: 50%;
+					transform: translateY(-50%);
+				}
+			}
+		}
+	}
+}
+
+.select2-dropdown {
+	border: 1px solid #e0dbd6;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+	border: 1px solid #e0dbd6;
+}
+
+.select2-container--default .select2-results__option[aria-selected=true] {
+	background-color: #e0dbd6;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+	background-color: #e0dbd6;
+	color: #fff;
+}
+
+.select2-search__field {
+	outline: none;
+}
+
+.select2-dropdown {
+	border-radius: 0;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+	line-height: 20px;
+	padding-left: 0;
+}
+
+.profile__section[data-delivery] .profile__section-item:first-child .select2-container--default .select2-selection--single {
+	height: 33px;
+}
