@@ -73,16 +73,35 @@
 			margin-bottom: 0;
 		}
 		&-btn {
-			text-transform: uppercase;
-			padding: 0;
-			border: none;
-			outline: none;
-			background-color: transparent;
-			font-weight: 500;
-			font-size: 11px;
-			line-height: normal;
-			letter-spacing: 0.05em;
-			color: #c9a96e;
+			&.btn.btn-primary {
+				white-space: nowrap;
+				border-radius: 4px;
+				padding: 10px 24px;
+				width: 136px;
+				height: 35px;
+				background: #c9a96e;
+				font-family: "Inter_18pt-Medium", sans-serif;
+				font-weight: 500;
+				font-size: 16px;
+				letter-spacing: 0.05em;
+				color: #0f0f0f;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border: none;
+				&:hover {
+					background: #b8965c;
+				}
+				&:active {
+					background: #b8965c;
+					color: #0f0f0f;
+					
+				}
+				&:disabled {
+					background: #dec79e;
+					opacity: 0.6;
+				}
+			}
 		}
 		&-form {
 			padding: 24px 32px 0;
@@ -101,7 +120,7 @@
 					@media screen and (max-width: 580px) {
 						width: 100%;
 					}
-					&:last-child {
+					&.w100 {
 						width: 100%;
 						padding-left: 8px;
 					}
@@ -159,6 +178,75 @@
 					left: 0;
 					top: 50%;
 					transform: translateY(-50%);
+				}
+			}
+		}
+		&-collapsible {
+			width: 100%;
+			display: none;
+			flex-wrap: wrap;
+			grid-gap: 24px;
+			&.active {
+				display: flex;
+			}
+			&__title {
+				padding: 24px 8px 0;
+				margin-bottom: 0;
+				width: 100%;
+				font-weight: 500;
+				font-size: 14px;
+				line-height: normal;
+				letter-spacing: 0.15em;
+				color: #706b66;
+				border-top: 1px solid #e0dbd6;
+				& + .profile__section-item {
+					padding: 0 8px;
+				}
+			}
+			&.v3 {
+				& > .profile__section-item {
+					width: calc(33.33333% - 16px);
+					@media screen and (max-width: 992px) {
+						width: calc(50% - 12px);
+					}
+					@media screen and (max-width: 580px) {
+						width: 100%;
+					}
+					&.w100 {
+						width: 100%;
+						padding-left: 8px;
+					}
+					&.w-25 {
+						width: calc(25% - 18px) !important;
+						@media screen and (max-width: 992px) {
+							width: calc(50% - 12px) !important;
+						}
+						@media screen and (max-width: 580px) {
+							width: 100% !important;
+						}
+					}
+					& {
+						& select {
+							padding: 4px 0;
+							font-weight: 400;
+							font-size: 16px;
+							line-height: 154%;
+							color: #0f0f0f;
+							border: none;
+							outline: none;
+							border-bottom: 1px solid #e0dbd6;
+							width: 100%;
+							background-color: transparent;
+						}
+						& .select2-container--default .select2-selection--single {
+							background-color: #fff;
+							border-color: transparent;
+							border-bottom: 1px solid #e0dbd6;
+							padding: 10px 14px 10px 0;
+							height: 42px;
+							border-radius: 0;
+						}
+					}
 				}
 			}
 		}

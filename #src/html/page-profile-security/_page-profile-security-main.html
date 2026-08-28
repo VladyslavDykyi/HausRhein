@@ -1,0 +1,49 @@
+<div class="profile__main-wrapper">
+	<section class="profile__section">
+		<div class="profile__section-header">
+			<h2 class="profile__section-title">
+				PASSWORD
+			</h2>
+			<button class="profile__section-btn btn btn-primary" type="submit" form="user-info">
+				SAVE
+			</button>
+		</div>
+		<form class="profile__section-form" action="#" id="user-info">
+			<div class="profile__section-item w-100">
+				<!--				підсвітка помилки з'являється по додавання класу error  -->
+				<label class="input-my2 error" for="current_password">
+					<span class="input-my2__wrapper">
+						<span class="input-my2__text-label">
+							CURRENT PASSWORD
+						</span>
+						<input type="password" id="current_password" name="current_password" required placeholder="Enter current password">
+					</span>
+					<span class="input-my2__error">⚠ This field is required</span>
+				</label>
+			</div>
+			<div class="profile__section-item">
+				<label class="input-my2 " for="new_password">
+					<span class="input-my2__wrapper">
+						<span class="input-my2__text-label">
+							NEW PASSWORD
+						</span>
+						<input type="password" id="new_password" name="new_password" required placeholder="Enter new password">
+					</span>
+					<span class="input-my2__error">⚠ This field is required</span>
+				</label>
+			</div>
+			<div class="profile__section-item">
+				
+				<label class="input-my2 " for="confirm_new-password">
+					<span class="input-my2__wrapper">
+						<span class="input-my2__text-label">
+							CONFIRM NEW PASSWORD
+						</span>
+						<input type="password" id="confirm_new-password" name="confirm_new-password" required placeholder="Enter confirm new password">
+					</span>
+					<span class="input-my2__error">⚠ This field is required</span>
+				</label>
+			</div>
+		</form>
+	</section>
+</div>

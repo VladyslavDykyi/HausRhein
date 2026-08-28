@@ -4,7 +4,7 @@
 			<h2 class="profile__section-title">
 				PERSONAL INFORMATION
 			</h2>
-			<button class="profile__section-btn" type="submit" form="user-info">
+			<button class="profile__section-btn btn btn-primary" type="submit" form="user-info">
 				SAVE
 			</button>
 		</div>
@@ -61,7 +61,7 @@
 			<h2 class="profile__section-title">
 				SHIPPING & BILLING ADDRESS
 			</h2>
-			<button class="profile__section-btn" type="submit" form="user-info-delivery">
+			<button class="profile__section-btn btn btn-primary" type="submit" form="user-info-delivery">
 				SAVE
 			</button>
 		</div>
@@ -133,15 +133,98 @@
 					<span class="input-my2__error">⚠ This field is required</span>
 				</label>
 			</div>
-			<div class="profile__section-item">
+			<div class="profile__section-item w100">
 				<label class="checkbox-my" for="confirmRegistrationModal">
-					<input type="checkbox" id="confirmRegistrationModal" name="confirmRegistrationModal">
+					<input checked type="checkbox" id="confirmRegistrationModal" name="confirmRegistrationModal">
 					<span>
 						Billing address is the same as shipping address
 					</span>
 				</label>
 				<div class="invalid-feedback">
 					You must agree before submitting.
+				</div>
+			</div>
+			<div class="profile__section-collapsible v3">
+				<h2 class="profile__section-collapsible__title">
+					BILLING ADDRESS
+				</h2>
+				<div class="profile__section-item">
+					<label class="input-my2__text-label" for="mySelect-country-bill">
+						COUNTRY
+					</label>
+					<select class="mySelect-increase" id="mySelect-country-bill" name="mySelect-country-bill">
+						<option value="value1">Switzerland</option>
+						<option value="value2">Ukraine</option>
+						<option value="value2">Poland</option>
+						<option value="value2">USA</option>
+						<option value="value2">Denmark</option>
+					</select>
+				</div>
+				<div class="profile__section-item">
+					<label class="input-my2" for="region_canton-bill">
+					<span class="input-my2__wrapper">
+						<span class="input-my2__text-label">
+							REGION / CANTON
+						</span>
+						<input type="text" id="region_canton-bill" name="region_canton-bill" required placeholder="Enter region / canton">
+					</span>
+						<span class="input-my2__error">⚠ This field is required</span>
+					</label>
+				</div>
+				<div class="profile__section-item">
+					<label class="input-my2" for="city-bill">
+					<span class="input-my2__wrapper">
+						<span class="input-my2__text-label">
+							CITY
+						</span>
+						<input type="text" id="city-bill" name="city-bill" required placeholder="Enter city">
+					</span>
+						<span class="input-my2__error">⚠ This field is required</span>
+					</label>
+				</div>
+				<div class="profile__section-item w-25">
+					<label class="input-my2" for="postal_code-bill">
+					<span class="input-my2__wrapper">
+						<span class="input-my2__text-label">
+							POSTAL CODE
+						</span>
+						<input type="text" id="postal_code-bill" name="postal_code-bill" required placeholder="Enter postal code">
+					</span>
+						<span class="input-my2__error">⚠ This field is required</span>
+					</label>
+				</div>
+				<div class="profile__section-item w-25">
+					<label class="input-my2" for="street_address-bill">
+					<span class="input-my2__wrapper">
+						<span class="input-my2__text-label">
+							STREET ADDRESS
+						</span>
+						<input type="text" id="street_address-bill" name="street_address-bill" required placeholder="Enter street address">
+					</span>
+						<span class="input-my2__error">⚠ This field is required</span>
+					</label>
+				</div>
+				<div class="profile__section-item w-25">
+					<label class="input-my2" for="apt_suite-bill">
+						<span class="input-my2__wrapper">
+							<span class="input-my2__text-label">
+								APT / SUITE
+							</span>
+							<input type="text" id="apt_suite-bill" name="apt_suite-bill" required placeholder="Enter apt suite">
+						</span>
+						<span class="input-my2__error">⚠ This field is required</span>
+					</label>
+				</div>
+				<div class="profile__section-item w-25">
+					<label class="input-my2" for="company_name-bill">
+						<span class="input-my2__wrapper">
+							<span class="input-my2__text-label">
+								COMPANY NAME
+							</span>
+							<input type="text" id="company_name-bill" name="company_name-bill" required placeholder="Enter company name">
+						</span>
+						<span class="input-my2__error">⚠ This field is required</span>
+					</label>
 				</div>
 			</div>
 		</form>
