@@ -97,7 +97,7 @@ textarea {
       -ms-flex-pack: justify;
           justify-content: space-between;
   vertical-align: center;
-  grid-gap: 8px;
+  grid-gap: 12px;
   max-width: 520px;
   width: 100%;
   margin: 0 8px;
@@ -2441,6 +2441,32 @@ textarea {
   }
 }
 
+@media screen and (max-width: 1180px) {
+  .header__nav {
+    grid-gap: 8px;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .header__nav .dropdown.link .btn {
+    font-size: 14px;
+  }
+
+  .header__nav-link {
+    font-size: 14px;
+  }
+
+  .header__actions-item:nth-child(2) {
+    padding: 0 12px;
+    margin: 0 12px;
+    grid-gap: 12px;
+  }
+
+  .btn-register-log {
+    grid-gap: 12px;
+  }
+}
+
 @media screen and (max-width: 1100px) {
   .hero__title {
     font-size: 44px;
@@ -2520,6 +2546,22 @@ textarea {
 
   .pagination-bg {
     padding: 24px 0 48px;
+  }
+
+  .pagination .page-item:first-child a {
+    width: 48px;
+  }
+
+  .pagination .page-item:first-child a > span {
+    display: none;
+  }
+
+  .pagination .page-item:last-child a {
+    width: 48px;
+  }
+
+  .pagination .page-item:last-child a > span {
+    display: none;
   }
 }
 
@@ -2602,24 +2644,6 @@ textarea {
 
   .placeBidModal .modal-body .form-login-item > .text-value {
     font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 540px) {
-  .pagination .page-item:first-child a {
-    width: 48px;
-  }
-
-  .pagination .page-item:first-child a > span {
-    display: none;
-  }
-
-  .pagination .page-item:last-child a {
-    width: 48px;
-  }
-
-  .pagination .page-item:last-child a > span {
-    display: none;
   }
 }
 

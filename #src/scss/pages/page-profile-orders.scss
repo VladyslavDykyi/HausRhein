@@ -1,0 +1,12 @@
+@import "_default";
+@import "_header";
+@import "_header-profile";
+@import "_sidebar-profile";
+@import "./page-profile-orders/_page-profile-orders-main";
+@import "_pagination";
+@import "_footer";
+
+body {
+	background-color: #f8f6f1;
+}
+

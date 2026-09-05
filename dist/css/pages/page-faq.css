@@ -97,7 +97,7 @@ textarea {
       -ms-flex-pack: justify;
           justify-content: space-between;
   vertical-align: center;
-  grid-gap: 8px;
+  grid-gap: 12px;
   max-width: 520px;
   width: 100%;
   margin: 0 8px;
@@ -1975,6 +1975,32 @@ body {
 
   .placeBidModal .modal-dialog.modal-xl {
     --bs-modal-width: 500px;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .header__nav {
+    grid-gap: 8px;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .header__nav .dropdown.link .btn {
+    font-size: 14px;
+  }
+
+  .header__nav-link {
+    font-size: 14px;
+  }
+
+  .header__actions-item:nth-child(2) {
+    padding: 0 12px;
+    margin: 0 12px;
+    grid-gap: 12px;
+  }
+
+  .btn-register-log {
+    grid-gap: 12px;
   }
 }
 

@@ -12,10 +12,13 @@
 		align-items: center;
 		justify-content: space-between;
 		vertical-align: center;
-		grid-gap: 8px;
+		grid-gap: 12px;
 		max-width: 520px;
 		width: 100%;
 		margin: 0 8px;
+		@media screen and (max-width: 1180px) {
+			grid-gap: 8px;
+		}
 		@media screen and (max-width: 992px) {
 			display: none;
 		}
@@ -33,6 +36,9 @@
 				line-height: normal;
 				&:hover {
 					color: #c9a96e;
+				}
+				@media screen and (max-width: 1130px) {
+					font-size: 14px;
 				}
 				&.show {
 					border: none;
@@ -120,6 +126,9 @@
 			&:hover {
 				color: #c9a96e;
 			}
+			@media screen and (max-width: 1130px) {
+				font-size: 14px;
+			}
 		}
 	}
 	&__logo {
@@ -152,6 +161,11 @@
 				margin: 0 20px;
 				display: flex;
 				grid-gap: 20px;
+				@media screen and (max-width: 1130px) {
+					padding: 0 12px;
+					margin: 0 12px;
+					grid-gap: 12px;
+				}
 				@media screen and (max-width: 992px) {
 					border-left: none;
 					padding: 0 20px 0 0;
@@ -456,6 +470,10 @@
 	}
 }
 .btn-register-log {
+	@media screen and (max-width: 1130px) {
+		
+		grid-gap: 12px;
+	}
 	& .btn-dark {
 		font-weight: 400;
 		font-size: 16px;
