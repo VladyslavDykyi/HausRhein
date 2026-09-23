@@ -1,0 +1,17 @@
+@import "_default";
+@import "_header";
+@import "_breadcrumbs";
+
+@import "./page-carts/page-cart-1/_page-cart-1";
+@import "./page-carts/page-cart-1/_page-cart-body";
+@import "./page-lot-buy-now/_page-lot-buy-now-list";
+@import "_footer";
+@import "../default/_select2.scss";
+
+.wrapper-buy-now {
+	background: #eeeae4;
+	padding: 56px 0 64px;
+	& .buy-now-bg {
+		background: inherit;
+	}
+}
