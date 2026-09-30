@@ -168,7 +168,9 @@
 	font: inherit;
 	font-size: 12px;
 }
-
+.blokclick {
+	pointer-events: none;
+}
 .stage-picker button[aria-pressed="true"] {
 	border-color: var(--stepper-dark);
 	background: var(--stepper-dark);
