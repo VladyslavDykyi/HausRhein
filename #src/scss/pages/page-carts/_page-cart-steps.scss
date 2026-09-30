@@ -1,0 +1,195 @@
+:root {
+	--stepper-text: #777;
+	--stepper-dark: #171717;
+	--stepper-muted: #dfddd9;
+	--stepper-line: #deddda;
+	--stepper-success: #31956f;
+	--stepper-success-line: #78b99e;
+	--stepper-warning: #c9a55e;
+	--stepper-size: 30px;
+	--stepper-font: Arial, Helvetica, sans-serif;
+}
+
+
+.viewport {
+	width: 100%;
+	max-width: 100%;
+	min-height: 88px;
+	overflow: hidden;
+	border: 1px solid #e5e3df;
+	border-radius: 8px;
+	background: #fff;
+	transition: width .2s ease, background .2s ease;
+}
+
+.viewport__canvas {
+	width: 100%;
+	min-height: 88px;
+	display: grid;
+	align-items: center;
+	padding: 20px 14px;
+}
+
+.viewport--mobile .stepper {
+	gap: 8px;
+}
+
+.viewport--mobile .step {
+	gap: 6px;
+	font-size: 11px;
+	text-decoration: none;
+}
+
+.viewport--mobile .stepper__line {
+	min-width: 8px;
+}
+
+.viewport--compact .step {
+	gap: 0;
+}
+
+.viewport--compact .step__label {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	white-space: nowrap;
+}
+
+.viewport__meta {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 7px;
+	color: #999;
+	font-size: 11px;
+}
+
+/* Один компонент. Змініть тільки data-stage: review, payment або confirmation. */
+.stepper {
+	width: 100%;
+	max-width: 800px;
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.step {
+	display: flex;
+	align-items: center;
+	flex: 0 0 auto;
+	gap: 12px;
+	color: var(--stepper-text);
+	font-size: 14px;
+	text-decoration: none;
+	line-height: 1;
+	white-space: nowrap;
+}
+
+.step__badge {
+	width: 28px;
+	height: 28px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 0 0 28px;
+	border-radius: 50%;
+	background: var(--stepper-muted);
+	color: #757575;
+	font-size: 13px;
+	font-weight: 400;
+}
+
+.step__label { display: block; }
+
+.step--current {
+	color: var(--stepper-dark);
+	font-weight: 700;
+}
+
+.step--current .step__badge {
+	background: var(--stepper-dark);
+	color: #fff;
+}
+
+.step--done {
+	color: var(--stepper-success);
+	font-weight: 700;
+}
+
+.step--done .step__badge {
+	background: var(--stepper-success);
+	color: #fff;
+	font-size: 15px;
+}
+
+.step--attention {
+	color: var(--stepper-warning);
+	font-weight: 700;
+}
+
+.step--attention .step__badge {
+	background: var(--stepper-warning);
+	color: #fff;
+	font-size: 15px;
+}
+
+.stepper__line {
+	height: 1px;
+	min-width: 24px;
+	flex: 1 1 auto;
+	background: var(--stepper-line);
+}
+
+.stepper__line--done {
+	background: var(--stepper-success-line);
+}
+
+/* Додатковий стан: фінальний крок очікує підтвердження. */
+.step--attention .step__badge::before { content: '★'; }
+.step--attention .step__badge { font-size: 0; }
+.step--attention .step__badge::before { font-size: 13px; }
+
+.stage-picker {
+	display: flex;
+	gap: 8px;
+	margin-top: 28px;
+	justify-content: center;
+}
+
+.stage-picker button {
+	border: 1px solid #d7d5d1;
+	border-radius: 6px;
+	padding: 7px 10px;
+	background: #fff;
+	color: #555;
+	cursor: pointer;
+	font: inherit;
+	font-size: 12px;
+}
+
+.stage-picker button[aria-pressed="true"] {
+	border-color: var(--stepper-dark);
+	background: var(--stepper-dark);
+	color: #fff;
+}
+
+@media (max-width: 560px) {
+	.stepper { gap: 8px; }
+	.step { gap: 8px; font-size: 12px; }
+	.stepper__line { min-width: 10px; }
+}
+
+@media (max-width: 390px) {
+	.step { gap: 0; }
+	.step__label {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+		clip: rect(0 0 0 0);
+		clip-path: inset(50%);
+		white-space: nowrap;
+	}
+}

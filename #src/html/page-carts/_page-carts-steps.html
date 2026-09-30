@@ -1,0 +1,28 @@
+<div class="viewport" data-viewport-mode="full">
+	<div class="container">
+		<div class="viewport__canvas">
+			<!-- На реальній сторінці залиште тільки nav і змінюйте data-stage.
+				 Для золотого Confirmation додайте data-confirmation-state="attention". -->
+			<nav class="stepper" data-stage="payment" aria-label="Order progress">
+				<a href="#" class="step step--done" data-step="review">
+					<span class="step__badge">1</span>
+					<span class="step__label">Review Order</span>
+				</a>
+				
+				<span class="stepper__line " aria-hidden="true"></span>
+				
+				<a href="#" class="step step--current" data-step="payment">
+					<span class="step__badge">2</span>
+					<span class="step__label">Payment</span>
+				</a>
+				
+				<span class="stepper__line" aria-hidden="true"></span>
+				
+				<a href="#" class="step step--attention" data-step="confirmation">
+					<span class="step__badge">3</span>
+					<span class="step__label">Confirmation</span>
+				</a>
+			</nav>
+		</div>
+	</div>
+</div>
