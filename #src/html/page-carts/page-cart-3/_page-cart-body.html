@@ -1,0 +1,91 @@
+<div class="cart__body">
+	<section class="cart__body-head">
+		<h2 class="cart__body-head-title">
+			SELECT PAYMENT METHOD
+		</h2>
+	</section>
+	<form class="cart__form">
+		<label class="cart__form-label" for="visa-mastercard-american-express">
+			<input checked class="cart__form-radio" type="radio" name="payment-method" id="visa-mastercard-american-express">
+			<span class="cart__form-wrapper">
+				<span class="cart__form-icons">
+					<img class="cart__form-icon" src="./img/icon/visa.png" alt="">
+					<img class="cart__form-icon" src="./img/icon/masterCard.png" alt="">
+					<img class="cart__form-icon" src="./img/icon/amex.png" alt="">
+				</span>
+				<span class="cart__form-text">
+					Visa / Mastercard / American Express
+				</span>
+			</span>
+		</label>
+		<label class="cart__form-label" for="payPal">
+			<input class="cart__form-radio" type="radio" name="payment-method" id="payPal">
+			<span class="cart__form-wrapper">
+				<span class="cart__form-icons">
+					<img class="cart__form-icon" src="./img/icon/payPal.png" alt="">
+				</span>
+				<span class="cart__form-text">
+					PayPal
+				</span>
+			</span>
+		</label>
+		<label class="cart__form-label" for="cryptocurrency">
+			<input class="cart__form-radio" type="radio" name="payment-method" id="cryptocurrency">
+			<span class="cart__form-wrapper">
+				<span class="cart__form-icons">
+					<img class="cart__form-icon" src="./img/icon/crypto.png" alt="">
+				</span>
+				<span class="cart__form-text">
+					<span class="cart__form-text-title">
+						Cryptocurrency
+					</span>
+					<span class="cart__form-text-desc">
+						Bitcoin, Ethereum, USDC
+					</span>
+				</span>
+			</span>
+		</label>
+		<label class="cart__form-label" for="wire-transfer">
+			<input class="cart__form-radio" type="radio" name="payment-method" id="wire-transfer">
+			<span class="cart__form-wrapper">
+				<span class="cart__form-icons">
+					<img class="cart__form-icon" src="./img/icon/wire-transfer.png" alt="">
+				</span>
+				<span class="cart__form-text">
+					<span class="cart__form-text-title">
+						Wire Transfer
+					</span>
+					<span class="cart__form-text-desc">
+						We will send you an invoice with details
+					</span>
+				</span>
+			</span>
+		</label>
+	</form>
+	<div class="cart__notice">
+		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill cart__notice-icon" viewBox="0 0 16 16">
+			<path fill="rgba(201, 169, 110, 0.6)" d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+		</svg>
+		<p class="cart__notice-text">
+			After clicking "Proceed", you will be securely redirected to the payment provider to complete your transaction. Your order will be confirmed upon successful payment.
+		</p>
+	</div>
+	<section class="profile__section" data-delivery>
+		<div class="profile__section-header">
+			<h2 class="profile__section-title">
+				SHIPPING & BILLING ADDRESS
+			</h2>
+		</div>
+		<div class="profile__section-content">
+			<h3 class="profile__section-name">
+				Alexander Müller
+			</h3>
+			<p class="profile__section-address">
+				Bahnhofstrasse 47, 8001 Zurich, Switzerland
+			</p>
+			<p class="profile__section-email">
+				a.muller@example.com
+			</p>
+		</div>
+	</section>
+</div>

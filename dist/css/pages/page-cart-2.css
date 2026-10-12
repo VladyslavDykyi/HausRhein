@@ -1201,6 +1201,7 @@ textarea {
 
 .cart .cart-wrapper .cart__aside {
   border-radius: 4px;
+  width: 100%;
   max-width: 338px;
   background: #fff;
 }
