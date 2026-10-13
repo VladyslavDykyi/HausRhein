@@ -1,0 +1,88 @@
+.cart {
+	&__body {
+		// стилі для .cart__body
+		
+		&-head {
+			border-radius: 4px 4px 0 0;
+			padding: 20px 40px;
+			background: #fff;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			border-bottom: 1px solid #d7d3cd;
+			&-title {
+				font-family: "Inter_18pt-SemiBold", sans-serif;
+				font-weight: 600;
+				font-size: 16px;
+				letter-spacing: 0.15em;
+				color: #151412;
+				margin-bottom: 0;
+				line-height: normal;
+			}
+		}
+		
+		&-steps {
+			padding: 0 28px;
+			background: #fff;
+			border-radius: 0 0 4px 4px;
+		}
+		
+		&-step {
+			display: flex;
+			grid-gap: 20px;
+			padding-top: 40px;
+			padding-bottom: 40px;
+			border-bottom: 1px solid rgba(224, 219, 214, 0.8);
+			&:last-child {
+				border-bottom: none;
+				border-radius: 0 0 4px 4px;
+			}
+			&-number {
+				border-radius: 50%;
+				width: 40px;
+				height: 40px;
+				background: #1a1917;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-family: 'EBGaramond-Medium', serif;
+				font-weight: 600;
+				font-size: 24px;
+				color: #c9a96e;
+			}
+			
+			&-content {
+				max-width: calc(100% - 60px);
+			}
+			
+			&-title {
+				font-family: "Inter_18pt-SemiBold", sans-serif;
+				font-weight: 600;
+				font-size: 18px;
+				color: #151412;
+				margin-bottom: 6px;
+				line-height: normal;
+			}
+			
+			&-text {
+				font-weight: 400;
+				font-size: 16px;
+				color: #706b66;
+				margin-bottom: 6px;
+				line-height: normal;
+			}
+			
+			&-note {
+				font-weight: 400;
+				font-size: 14px;
+				color: #c9a96e;
+				border-radius: 2px;
+				padding: 3px 8px;
+				background: #f6f3ed;
+				margin-bottom: 0;
+				line-height: normal;
+				width: max-content;
+			}
+		}
+	}
+}

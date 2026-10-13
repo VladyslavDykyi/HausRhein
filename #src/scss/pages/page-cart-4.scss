@@ -1,0 +1,16 @@
+@import "_default";
+@import "_header";
+
+@import "./page-carts/_page-cart-steps";
+@import "./page-carts/page-cart-4/_page-cart-4";
+@import "./page-carts/page-cart-4/_page-cart-body";
+@import "_footer";
+
+.wrapper-buy-now {
+	background: #eeeae4;
+	padding: 56px 0 64px;
+	& .buy-now-bg {
+		background: inherit;
+	}
+}
+

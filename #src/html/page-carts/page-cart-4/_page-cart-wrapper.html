@@ -1,0 +1,27 @@
+<div class="cart-wrapper">
+	<div class="cart__success">
+		<svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<rect x="1" y="1" width="70" height="70" rx="35" fill="#2E8552" fill-opacity="0.15" />
+			<rect x="1" y="1" width="70" height="70" rx="35" stroke="#2E8552" stroke-width="2" />
+			<path d="M26.8037 37.24L29.1702 34.8437L33.9926 39.5866L44.423 29.196L46.8094 31.5923L33.9926 44.3594L26.8037 37.24Z" fill="#2E8552" />
+		</svg>
+		<h1 class="cart__success-title">
+			Order Placed Successfully
+		</h1>
+		<p class="cart__success-text">
+			Thank you, Alexander. Your order has been received.<br>
+			Wire transfer details have been sent to a.muller@example.com
+		</p>
+		<div class="copy-wrapper">
+			<!-- текст копіюtться автоматично по натисканю з тега span -->
+			<button class="btn btn-outline-primary" id="orderBtn">
+				Order Reference: <span>INV-2026-04007</span>
+			</button>
+			<span class="copy-toast" id="copyToast">copied</span>
+		</div>
+	</div>
+	<div class="cart__body-wrapper">
+		@@include('./_page-cart-body.html')
+		@@include('./_page-cart-aside.html')
+	</div>
+</div>
